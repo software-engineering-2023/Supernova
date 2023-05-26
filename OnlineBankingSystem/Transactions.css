@@ -5,17 +5,17 @@ thead, td {
  
 
 }
-tr:nth-child(even) {background-color: #ea83ff;}
+tr:nth-child(even) {background-color: #ff91ee;}
 th{
-  background-color: purple;
-color: rgb(210, 81, 210);
+  background-color: #580348 ;
+color: #fbf2fa;
 }
 ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #51087c;
+  background-color: #580348  ; 
 }
 
 ul.navbar li {
@@ -97,7 +97,7 @@ td{
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 body{
   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #ce8fe8, #fdbcf8);
+  background: linear-gradient(to right, #fbf2fa, #efccec);
   font-family: 'Roboto', sans-serif;
 }
 section{
