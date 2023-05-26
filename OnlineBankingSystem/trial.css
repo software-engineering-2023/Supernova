@@ -1,0 +1,53 @@
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #51087c;
+    height: 200px;
+    width: 100%;
+  }
+
+  
+  ul.navbar2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #51087c;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+  }
+
+  ul.navbar li {
+    float: left;
+  }
+
+  ul.navbar li a {
+    display: block;
+    color: #fdf3ff;
+    margin-top:160px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul.navbar li a:hover {
+    background-color: #fdf3ff;
+    color: #51087c;
+  }
+  img.logo {
+    vertical-align: left; /* Align the image vertically in the navigation bar */
+    height: 10px; /* Adjust the height of the image as needed */
+    margin-right: 20px; /* Add margin to separate the image from the navigation links */
+  }
+
+  .icon-image {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    height: 130px; /* Adjust the height of the image as needed */
+    width: 130px;
+  }
