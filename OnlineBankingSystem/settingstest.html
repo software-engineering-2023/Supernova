@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="settingstet.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="settingstest.js"></script>
+
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+         <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+          <li><a href="Home.html">🏠Home</a></li>
+          <li><a href="Notifications.html"> 🔔Notifications</a></li>
+          <li><a href="Reminders.html">📝Reminders</a></li>
+          <li><a href="Transfers.html">📤Transfers</a></li>
+          <li><a href="CreditCards.html"><i class='fas fa-credit-card'><i class='far fa-credit-card'></i>Credit Cards</a></li>
+          <li><a href="Loans.html">💰Loans</a></li>
+          <li><a href="Requests.html">📃Requests</a></li>
+          <li><a href="Transactions.html">Transactions</a></li>
+          <li><a href="PayBills.html"><i class='fas fa-dollar-sign'></i>Pay Bills</a></li>
+          <li><a href="Settings.html"><i class="fa fa-gear"></i>Settings</a></li>
+          <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+          <li><a href="Login.html">Log out</a></li>
+        </ul>
+      </nav>
+    <div class="sidebar">
+        <ul class="menu">
+          <li><a href="#" onclick="openContainer(event, 'container1')">Menu 1</a></li>
+          <li><a href="#" onclick="openContainer(event, 'container2')">Menu 2</a></li>
+          <li><a href="#" onclick="openContainer(event, 'container3')">Menu 3</a></li>
+        </ul>
+      </div>
+      
+      <div id="container1" class="container">
+        <div class="table">
+            <h2>Biometric authentication login registered devices</h2>
+            <table id="BetweenMyAccounts" class="input-table">
+              <tr>
+                <th>Android Devices</th>
+                <td>
+                  <input type="checkbox" class="toggle" >
+                  </td>
+              </tr>
+              <tr>
+                <th>IOS Devices</th>
+                <td>
+                  <input type="checkbox" class="toggle" checked >
+                  </td>
+              </tr>
+              <tr>
+                <th class="header"></th>
+              </tr>
+            </table>
+            <p class="note">  Note: Deactivate Registration will disable Biometric Authentication Login from all devices    </p>
+            <h2>Push Notifications</h2>
+            <table>
+              <tr>
+                <th>Android Devices</th>
+                <td>
+                  <input type="checkbox" class="toggle" >
+                </td>
+              </tr>
+              <tr>
+                <th>IOS Devices</th>
+                <td>
+                  <input type="checkbox" class="toggle" checked>
+                </td>
+              <tr>
+                <th>Web Browser</th>
+                <td>
+                  <input type="checkbox" class="toggle">
+                </td>      
+              </tr>
+            </table>
+            <p class="note">  Note: Disabling the service will unregister the device from receiving alerts via push notifications.</p>
+            <table>
+                <tr>
+                  <th>Feedback Preferences</th>
+                  <td>
+                    <input type="checkbox" class="toggle" checked>
+                  </td>
+                </tr>
+            </table>
+            <p class="note">  Note: Disabling this will disable the feedback window after every transaction.</p>
+          </div>
+      <div id="container2" class="container">
+        <h3>Content for Menu 2</h3>
+        <p>This is the content for Menu 2.</p>
+      </div>
+      <div id="container3" class="container">
+        <h3>Content for Menu 3</h3>
+        <p>This is the content for Menu 3.</p>
+      </div>
+      
+</body>
+</html>
