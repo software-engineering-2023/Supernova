@@ -8,7 +8,7 @@
  </style>
   <link rel="stylesheet" href ="Home.css"/>
 </head>
-<body>
+<body>  
 
   <nav>
     <ul class="navbar">
@@ -25,14 +25,18 @@
       <li><a href="Settings.html">⚙️Settings</a></li>
       <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
       <li><a href="Login.html">Log out</a></li>
+      <li>
+        <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="AccountInfo.html">Account info</a>
+          <a href="ReportIssue.html">Report Issue</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
+        </div>
+      </div>
+    </li>
     </ul>
   </nav>
-  <div class="client-info">
-    <img src="Suicide.png" alt="Account" class="Account">
-    <p>Client Name: Jana Korayem</p>
-    <p>Client ID: 123456</p>
-    <p>Last Login: (date and time)</p>
-  </div>
   <div class = "home-icon">
     <img src="home.png" alt="home-icon" class="home-icon">
     <h1> Accounts Overview</h1>
@@ -47,38 +51,60 @@
 
 
 
-  <div class="container">
-    <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2>
+  
+    
+    <h3>Net Worth</h3>
+    <h4>EGP 150,000 </h4>
+
+    <div class="blank-row"></div>
+
     <ul class="responsive-table">
-      <li class="table-header">
-        <div class="col col-1">Job Id</div>
-        <div class="col col-2">Customer Name</div>
-        <div class="col col-3">Amount Due</div>
-        <div class="col col-4">Payment Status</div>
+      <h5>Current</h5>
+      <header>EGP 148,400</header>
+      <li class="table-row">
+        <div class="col col-1"><ha>Account Number</ha><br><br>100023456789</div>
+        <div class="col colBetween">0</div>
+        <div class="col colBetween">0</div>
+        <div class="col col-2"><ha>Balance</ha><br><br>EGP 49,000</div>
+        <div class="col col-3"><ha>Available To Use</ha><br><br>EGP 49,000</div>
+        <div class="col col-4"><ha>Equivalent</ha><br><br>EGP 49,000</div>
       </li>
       <li class="table-row">
-        <div class="col col-1" data-label="Job Id">42235</div>
-        <div class="col col-2" data-label="Customer Name">John Doe</div>
-        <div class="col col-3" data-label="Amount">$350</div>
-        <div class="col col-4" data-label="Payment Status">Pending</div>
+        <div class="col col-1"><ha>Account Number</ha><br><br>100055556789</div>
+        <div class="col colBetween">0</div>
+        <div class="col colBetween">0</div>
+        <div class="col col-2"><ha>Balance</ha><br><br>EGP 99,400</div>
+        <div class="col col-3"><ha>Available To Use</ha><br><br>EGP 99,400</div>
+        <div class="col col-4"><ha>Equivalent(EGP)</ha><br><br>EGP 99,400</div>
       </li>
+
+      <div class="blank-row"></div>
+      <div class="blank-row"></div>
+
+
+
+      <h6>Saving</h6>
       <li class="table-row">
-        <div class="col col-1" data-label="Job Id">42442</div>
-        <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
-        <div class="col col-3" data-label="Amount">$220</div>
-        <div class="col col-4" data-label="Payment Status">Pending</div>
+        <div class="col col-1"><ha>Account Number</ha><br><br>100023456888</div>
+        <div class="col colBetween">0</div>
+        <div class="col colBetween">0</div>
+        <div class="col col-2"><ha>Balance</ha><br><br>EGP 1,600</div>
+        <div class="col col-3"><ha>Available To Use</ha><br><br>EGP 1,600</div>
+        <div class="col col-4"><ha>Equivalent(EGP)</ha><br><br>EGP 1,600</div>
       </li>
+
+      <div class="blank-row"></div>
+
+      
+      <h7>Credit Card</h7>
       <li class="table-row">
-        <div class="col col-1" data-label="Job Id">42257</div>
-        <div class="col col-2" data-label="Customer Name">John Smith</div>
-        <div class="col col-3" data-label="Amount">$341</div>
-        <div class="col col-4" data-label="Payment Status">Pending</div>
+        <div class="col col-1"><ha>Credit Card Number</ha><br><br>5336**********7251</div>
+        <div class="col colBetween">0</div>
+        <div class="col colBetween">0</div>
+        <div class="col colBetween">0</div>
+        <div class="col col-3"><ha>Credit Left To Use/Total Limit</ha><br><br>32500/75000</div>
+        <div class="col col-4"><ha>Expiry Date</ha><br><br>30/11/2025</div>
       </li>
-      <li class="table-row">
-        <div class="col col-1" data-label="Job Id">42311</div>
-        <div class="col col-2" data-label="Customer Name">John Carpenter</div>
-        <div class="col col-3" data-label="Amount">$115</div>
-        <div class="col col-4" data-label="Payment Status">Pending</div>
-      </li>
+      
     </ul>
-  </div>
+  
