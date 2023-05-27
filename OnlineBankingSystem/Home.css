@@ -3,9 +3,11 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #51087c;
     height: 200px;
     width: 100%;
+    /*background-color: linear-gradient(#51087c, #51087c 60%, #51087c);*/
+    /* background-color: #580348;*/
+    background-color: #51087c;
   }
 
   
@@ -92,15 +94,82 @@ a{
     padding-left: 10px;
     padding-right: 10px;
   }
+  .networth{
+    position: absolute;
+    
+    
+  }
+
+  .blank-row {
+    height: 20px; /* Adjust the height as needed */
+  }
   
-  h2 {
+  /* h2 {
     font-size: 26px;
     margin: 20px 0;
     text-align: center;
+    color:#fdf3ff; 
+  } */
+  h3 {
+    font-size: 15px;
+    text-align: right;
+    color:#5b3dce; 
+    margin-top: 130x;
+    padding: 25px 30px;
+    right: 50px;  
   }
-  h2 small {
-    font-size: 0.5em;
-  }
+
+  h4 {
+    font-size: 20px;
+    text-align: right;
+    color:#5b3dce; 
+    padding: 25px 30px;
+    position: absolute;
+    top: 220px;  
+    right:   2px; 
+    height:    80px;   }
+
+    h5 {
+      font-size: 20px;
+      text-align: left;
+      color:#e0aad6; 
+      padding: 25px 30px;
+      position: absolute;
+      top: 250px;  
+      left:   20px; 
+      height:    80px;   }
+
+    header {
+        font-size: 15px;
+        text-align: left;
+        color:#e0aad6; 
+        padding: 25px 30px;
+        position: absolute;
+        top: 290px;  
+        right:   130px; 
+        height:    80px;   }
+
+    h6 {
+      font-size: 20px;
+      text-align: left;
+      color:#e0aad6; 
+      padding: 25px 30px;
+      position: absolute;
+      top: 300;  
+      left:   20px; 
+      height:    80px; 
+    margin-top: 10px; 
+   }
+
+      h7 {
+        font-size: 20px;
+        text-align: left;
+        color:#e0aad6; 
+        padding: 25px 30px;
+        position: absolute;
+        top: 600;  
+        left:   20px; 
+        height:    80px;   }
   
   .responsive-table li {
     border-radius: 3px;
@@ -110,7 +179,7 @@ a{
     margin-bottom: 25px;
   }
   .responsive-table .table-header {
-    background-color: #95A5A6;
+    background-color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -120,10 +189,19 @@ a{
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
   }
   .responsive-table .col-1 {
+    font-weight: bold;
     flex-basis: 10%;
   }
+  .responsive-table .ha {
+    font-weight: bold;
+    flex-basis: 10%;
+  }
+  .responsive-table .colBetween {
+    color:#ffffff;
+    flex-basis: 25%;
+  }
   .responsive-table .col-2 {
-    flex-basis: 40%;
+    flex-basis: 25%;
   }
   .responsive-table .col-3 {
     flex-basis: 25%;
@@ -153,3 +231,69 @@ a{
       text-align: right;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  .box-content {
+    display: none;
+    text-align: right;
+    border: 1px solid rgb(68, 0, 55);
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a4c2fd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  p {
+    color: rgb(6, 6, 113); 
+    font-size: 18px; 
+  }
+*{
+  box-sizing:border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+    
+    .navbar.open {
+      left: 0; /* Slides in from the left when open class is applied */
+    }
+    
+ 
