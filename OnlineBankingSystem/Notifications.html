@@ -68,5 +68,66 @@
     <p>Client ID: 123456</p>
     <p>Last Login: (date and time)</p>
   </div>
-</body>
-</html>
+  <link rel="stylesheet" href="Notifications.css" media="all">
+
+<div class="wrapper">
+
+  <div class="bell" id="bell-1">
+    <div class="anchor material-icons layer-1"> <img src="Bell.png" alt="Account" class="Account"></div>
+    <div class="anchor material-icons layer-2"><img src="Bell.png" alt="Account" class="Account"></div>
+    <div class="anchor material-icons layer-3"><img src="Bell.png" alt="Account" class="Account"></div>
+  </div>
+
+</div>
+
+<div class="container">
+
+  
+  <div class="leftbox">
+    <nav>
+      <a id="dashboard"><i class="fas fa-tachometer-alt"></i></a>
+      <a id="profile"> <i class="fas fa-user"></i> </a>
+      <a id="settings"> <i class="fas fa-cog"></i> </a>
+      <a id="messages"> <i class="fas fa-comments"></i> </a>
+      <a id="notification"> <i class="fas fa-bell"></i> </a>
+    </nav>
+  </div>
+  <div class="rightbox">
+    <div class="rb-container">
+      <ul class="rb">
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            27 May 2023<br> 7:00 PM
+          </div>
+          <div class="item-title">Dear Jana Korayem, a friendly reminder that your monthly loan repayment of 2000 EGP is due on 2/6/2023 . Please ensure sufficient funds are available in your account to avoid any late payment charges</div>
+
+        </li>
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            25 May 2023<br> 3:00 PM
+          </div>
+          <div class="item-title">Dear Jana Korayem, a withdrawal of 500 EGP has been made from your account on 25-5-2023 at 2:59 pm. If this transaction was not authorized by you, please contact our customer support immediately.</div>
+
+        </li>
+
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            21 May 2023<br> 7:00 PM
+          </div>
+          <div class="item-title">Dear Jana Korayem, we have detected suspicious activity on your account. A transaction of 50,000 has been flagged as potentially fraudulent. If you did not authorize this transaction, please contact our fraud department immediately.</div>
+
+        </li>
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            20 May 2023<br> 11:00 PM
+          </div>
+          <div class="item-title">Dear valued clients, our online banking system will be undergoing scheduled maintenance on 21-5-2023 from 3:00 am to 5:00 am. During this period, access to online banking services may be temporarily unavailable. We apologize for any inconvenience caused.</div>
+
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
