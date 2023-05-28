@@ -1,49 +1,17 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="CreditCards.CSS">
 <html>
 <head>
-  <style>
-    /* Optional CSS styles for styling the navigation bar */
-    ul.navbar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #1d178c;
-    }
+  <script src="CreditCards.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
-    ul.navbar li {
-      float: left;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    ul.navbar li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 
-    ul.navbar li a:hover {
-      background-color: #111;
-    }
-    img.logo {
-      vertical-align: right; /* Align the image vertically in the navigation bar */
-      height: 30px; /* Adjust the height of the image as needed */
-      margin-right: 20px; /* Add margin to separate the image from the navigation links */
-    }
-    .client-info {
-      position: absolute;
-      top: 10px; 
-      right: 10px; 
-      text-align: left;
-    }
-
-    p {
-      color: rgb(6, 6, 113); 
-      font-size: 18px; 
-    }
-   
-  </style>
+      crossorigin="anonymous">
 </head>
 <body>
   <nav>
@@ -57,16 +25,63 @@
       <li><a href="Requests.html">Requests</a></li>
       <li><a href="History.html">History</a></li>
       <li><a href="PayBills.html">Pay Bills</a></li>
-      <li><a href="Settings.html">Settings</a></li>
       <li><a href="ReportIssue.html">Report Issue</a></li>
-      <li><a href="Login.html">Log out</a></li>
+      <li>
+          <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon">
+          <div id="myDropdown" class="dropdown-content">
+            <a href="AccountInfo.html">Account info</a>
+            <a href="Settings.html">Settings</a>
+            <a href="Login.html">Sign Out</a>
+          </div>
+        </div>
+      </li>
     </ul>
   </nav>
-  <div class="client-info">
-    <img src="Suicide.png" alt="Account" class="Account">
-    <p>Client Name: Jana Korayem</p>
-    <p>Client ID: 123456</p>
-    <p>Last Login: (date and time)</p>
+
+
+
+
+<div class="card">
+  <div class="card__front card__part">
+    <img class="card__front-square card__square" src="https://image.ibb.co/cZeFjx/little_square.png">
+    <img class="card__front-logo card__logo" src="https://www.fireeye.com/partners/strategic-technology-partners/visa-fireeye-cyber-watch-program/_jcr_content/content-par/grid_20_80_full/grid-20-left/image.img.png/1505254557388.png">
+    <p class="card_numer">**** **** **** 1234</p>
+    <div class="card__space-75">
+      <span class="card__label">Card holder</span>
+      <p class="card__info">Jana Korayem</p>
+    </div>
+    <div class="card__space-25">
+      <span class="card__label">Expires</span>
+            <p class="card__info">10/25</p>
+    </div>
   </div>
+  
+  <div class="card__back card__part">
+    <div class="card__black-line"></div>
+    <div class="card__back-content">
+      <div class="card__secret">
+        <p class="card__secret--last">789</p>
+      </div>
+      <img class="card__back-square card__square" src="https://image.ibb.co/cZeFjx/little_square.png">
+      <img class="card__back-logo card__logo" src="https://www.fireeye.com/partners/strategic-technology-partners/visa-fireeye-cyber-watch-program/_jcr_content/content-par/grid_20_80_full/grid-20-left/image.img.png/1505254557388.png">
+      
+    </div>
+  </div>
+  
+</div>
+
+<br>
+<div class="container ">
+ 
+  <button><a href="CCDetails.html">Credit Card Details</a> </button>
+  <button><a href="CCStatment.html">Credit Card Statment</a></button>
+  <button><a href="CCPayment.html">Credit Card Payment</a></button>
+  <br>
+  <button><a href="ActivateCard.html">Activate Card</a></button>
+  <button><a href="BlockAndReplace.html">Block And Replacment</a></button>
+  <button><a href="ResetPin.html">Reset Pin</a></button>
+  
+</div>
+
 </body>
 </html>
