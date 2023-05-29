@@ -1,5 +1,5 @@
-function myFunction(id) {
-  document.getElementById("dropdown"+id).classList.toggle("show");
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
@@ -31,11 +31,4 @@ function hideTextbox() {
   var textbox = document.getElementById("textbox");
   textbox.classList.add("hidden");
 }
-function displayText() {
-  var box = document.getElementById("box");
-  if (box.style.display === "none") {
-    box.style.display = "block";
-  } else {
-    box.style.display = "none";
-  }
-}
+

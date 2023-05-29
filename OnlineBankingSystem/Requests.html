@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
+  <script src="suicideguy.js"></script>
+  <link rel="stylesheet" href ="Home.css"/>
 <head>
   <style>
+
+ul.navbar2 li {
+  float: left;
+}
+ul.navbar2 p {
+  float: left;
+    color:#fdf3ff; 
+  font-size: 18px; 
+}
+
+ul.navbar2 li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar2 li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
+img:hover {
+background-color: #fff;
+}
+
     /* Optional CSS styles for styling the navigation bar */
     ul.navbar {
       list-style-type: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #027B7B;
+      background-color: #51087c;
     }
 
     ul.navbar li {
@@ -28,19 +72,19 @@
     }
   
     body {
-      background-color: #fbf9f2;
+      background-color: #fbf2fa;
     }
 
     @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 
-.container {
-  background: #ffb517;
-  width: 540px;
+    .container {
+  background: #51087c;
+  width: 1000px;
   height: 500px;
   position: relative;
   margin-top: 5%;
-  margin-left: 3%;
+  margin-left: 18%;
   box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
 }
 
@@ -50,7 +94,7 @@
   position: absolute;
   width: 15%;
   height: 110%;
-  background-color: #027B7B;
+  background-color: #f7c6f9;
   box-shadow: 3px 3px 15px rgba(119, 119, 119, 0.5);
 }
 
@@ -122,7 +166,7 @@ ul.rb li .timestamp {
   color: #50d890;
   position: relative;
   width: 100px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .item-title {
@@ -131,6 +175,7 @@ ul.rb li .timestamp {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 18px;
 }
 
 .container-3 {
@@ -170,20 +215,20 @@ input::placeholder {
 
    
  h1 {
-      color: #ab7016;
+      color: #51087c;
       font-size: 40px;
-      margin-left: 375px;
+      margin-left: 75px;
       margin-top: 20px;
     }
 
-    .button-container {
+    /* .button-container {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       margin-top: 0px;
       margin-right: 50px;
       margin-left: 500px;
-    }
+    } */
 
     button {
       position: relative;
@@ -284,40 +329,85 @@ input::placeholder {
       100% {
         box-shadow: #27272c;
       }
-
     }
 
-    /* .logo{
-      height: 150px;
-      width: 150px;
-    } */
+    .button-container {
+  display: flex;
+  justify-content: flex-start; /* Align buttons from left to right */
+  margin-top: 0px;
+  margin-right: 500px;
+  margin-left: 50px;
+}
+
+.button-container a {
+  margin-right: 10px; /* Add some spacing between buttons */
+}
+
+h2 {
+      color: #51087c;
+      font-size: 30px;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
 
 
 
 
   </style>
-  
-
 </head>
 <body>
   <nav>
     <ul class="navbar">
+     <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+      <li><a href="Home.html">🏠Home</a></li>
+      <li><a href="Notifications.html"> 🔔Notifications</a></li>
+      <li><a href="Reminders.html">📝Reminders</a></li>
+      <li><a href="Transfers.html">📤Transfers</a></li>
+      <li><a href="CreditCards.html">💳Credit Cards</a></li>
+      <li><a href="Loans.html">💰Loans</a></li>
+      <li><a href="Requests.html">📃Requests</a></li>
+      <li><a href="Transactions.html">⌛Transactions</a></li>
+      <li><a href="PayBills.html">💲Pay Bills</a></li>
+      <li><a href="Settings.html">⚙Settings</a></li>
+      <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+      <li>
+        <img onclick="toggleDropdown()" class="myDropdown" src="Account.png" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+        <div id="myDropdown" class="dropdown-content">
 
-      <!-- <li><img src="Supernova.png" class="logo"></li> -->
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="Notifications.html">Notifications</a></li>
-      <li><a href="Reminders.html">Reminders</a></li>
-      <li><a href="Transfers.html">Transfers</a></li>
-      <li><a href="CreditCards.html">Credit Cards</a></li>
-      <li><a href="Loans.html">Loans</a></li>
-      <li><a href="Requests.html">Requests</a></li>
-      <li><a href="History.html">History</a></li>
-      <li><a href="PayBills.html">Pay Bills</a></li>
-      <li><a href="Settings.html">Settings</a></li>
-      <li><a href="ReportIssue.html">Report Issue</a></li>
-      <li><a href="Login.html">Log out</a></li>
+          <a href="Requests.html">Open a new Account</a>
+          <a href="AccountInfo.html">Account info</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
+        </div>
+      </div>
+    </li>
     </ul>
   </nav>
+  
+  <h2>New Request</h2> 
+
+  <div class="button-container">
+    <a href="OpenAcc.html">
+      <button style="--clr:#39FF14"><span>Open Account</span><i></i></button>
+    </a>
+
+    <a href="CloseAcc.html">
+      <button style="--clr:#FF44CC"><span>Close Account</span><i></i></button>
+    </a>
+
+    <a href="CCreq.html">
+      <button style="--clr:#0FF0FC"><span>Credit Card</span><i></i></button>
+    </a>
+
+    <a href="LoansReq.html">
+      <button style="--clr:#8A2BE2"><span>Loan Request</span><i></i></button>
+    </a>
+
+    <a href="DepChequesReq.html">
+      <button style="--clr:#E7EE4F"><span>Deposit Cheque</span><i></i></button>
+    </a>
+  </div>
+  
   
   <h1>Requests</h1>
 
@@ -325,19 +415,12 @@ input::placeholder {
 
     <div class="box">
       <div class="container-3">
-        <span class="icon"><i class="fa fa-search"></i></span>
-        <input type="search" id="search" placeholder="Search..." />
+      
       </div>
     </div>
   
     <div class="leftbox">
-      <nav>
-        <a id="dashboard"><i class="fas fa-tachometer-alt"></i></a>
-        <a id="profile"> <i class="fas fa-user"></i> </a>
-        <a id="settings"> <i class="fas fa-cog"></i> </a>
-        <a id="messages"> <i class="fas fa-comments"></i> </a>
-        <a id="notification"> <i class="fas fa-bell"></i> </a>
-      </nav>
+    
     </div>
     <div class="rightbox">
       <div class="rb-container">
@@ -379,29 +462,7 @@ input::placeholder {
       </div>
     </div>
   </div>
-  
-  <div class="button-container">
-    <a href="OpenAcc.html">
-      <button style="--clr:#39FF14"><span>Open Account</span><i></i></button>
-    </a>
-
-    <a href="CloseAcc.html">
-      <button style="--clr:#FF44CC"><span>Close Account</span><i></i></button>
-    </a>
-
-    <a href="CCreq.html">
-      <button style="--clr:#0FF0FC"><span>Credit Card</span><i></i></button>
-    </a>
-
-    <a href="LoansReq.html">
-      <button style="--clr:#8A2BE2"><span>Loan</span><i></i></button>
-    </a>
-
-    <a href="DepChequesReq.html">
-      <button style="--clr:#E7EE4F"><span>Deposit Cheque</span><i></i></button>
-    </a>
-  </div>
-  
  
+
 </body>
 </html>

@@ -1,7 +1,52 @@
 <!DOCTYPE html>
 <html>
+	<script src="suicideguy.js"></script>
+  <link rel="stylesheet" href ="Home.css"/>
 <head>
   <style>
+
+
+ul.navbar2 li {
+  float: left;
+}
+ul.navbar2 p {
+  float: left;
+    color:#fdf3ff; 
+  font-size: 18px; 
+}
+
+ul.navbar2 li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar2 li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
+img:hover {
+background-color: #fff;
+}
+
     /* Optional CSS styles for styling the navigation bar */
     ul.navbar {
       list-style-type: none;
@@ -51,7 +96,7 @@ body {
 }
 /*form styles*/
 #msform {
-	width: 400px;
+	width: 700px;
 	margin: 50px auto;
 	text-align: center;
 	position: relative;
@@ -63,8 +108,9 @@ body {
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
-	width: 80%;
+	width: 550px;
 	margin: 0 10%;
+	margin-right: 20px;
 	
 	/*stacking fieldsets above each other*/
 	position: relative;
@@ -145,61 +191,6 @@ option{
 	color: #2C3E50;
 	margin-bottom: 10px;
 }
-.fs-subtitle {
-	font-weight: normal;
-	font-size: 13px;
-	color: #666;
-	margin-bottom: 20px;
-}
-/*progressbar*/
-#progressbar {
-	margin-bottom: 30px;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
-}
-#progressbar li {
-	list-style-type: none;
-	color: rgb(167, 0, 218);
-	text-transform: uppercase;
-	font-size: 9px;
-	width: 33.33%;
-	float: left;
-	position: relative;
-}
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 20px;
-	line-height: 20px;
-	display: block;
-	font-size: 10px;
-	color: #333;
-	background: white;
-	border-radius: 3px;
-	margin: 0 auto 5px auto;
-}
-/*progressbar connectors*/
-#progressbar li:after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: white;
-	position: absolute;
-	left: -50%;
-	top: 9px;
-	z-index: -1; /*put it behind the numbers*/
-}
-#progressbar li:first-child:after {
-	/*connector not needed before the first step*/
-	content: none; 
-}
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-	background: #690385;
-	color: white;
-}
 
 h1{
     margin-bottom: 35px;
@@ -211,28 +202,42 @@ h1{
 
   </style>
 
-
+<script>
+	function showAlert() {
+      alert(" ✅  Your request has been submitted successfully");
+    }
+  
+</script>
 
 </head>
 <body>
-  <nav>
-    <ul class="navbar">
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="Notifications.html">Notifications</a></li>
-      <li><a href="Reminders.html">Reminders</a></li>
-      <li><a href="Transfers.html">Transfers</a></li>
-      <li><a href="CreditCards.html">Credit Cards</a></li>
-      <li><a href="Loans.html">Loans</a></li>
-      <li><a href="Requests.html">Requests</a></li>
-      <li><a href="History.html">History</a></li>
-      <li><a href="PayBills.html">Pay Bills</a></li>
-      <li><a href="Settings.html">Settings</a></li>
-      <li><a href="ReportIssue.html">Report Issue</a></li>
-      <li><a href="Login.html">Log out</a></li>
-    </ul>
-  </nav>
- 
-  
+	<nav>
+		<ul class="navbar">
+		 <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+		  <li><a href="Home.html">🏠Home</a></li>
+		  <li><a href="Notifications.html"> 🔔Notifications</a></li>
+		  <li><a href="Reminders.html">📝Reminders</a></li>
+		  <li><a href="Transfers.html">📤Transfers</a></li>
+		  <li><a href="CreditCards.html">💳Credit Cards</a></li>
+		  <li><a href="Loans.html">💰Loans</a></li>
+		  <li><a href="Requests.html">📃Requests</a></li>
+		  <li><a href="Transactions.html">⌛Transactions</a></li>
+		  <li><a href="PayBills.html">💲Pay Bills</a></li>
+		  <li><a href="Settings.html">⚙Settings</a></li>
+		  <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+		  <li>
+			<img onclick="toggleDropdown()" class="myDropdown" src="Account.png" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+			<div id="myDropdown" class="dropdown-content">
+	
+			  <a href="Requests.html">Open a new Account</a>
+			  <a href="AccountInfo.html">Account info</a>
+			  <a href="Settings.html">Settings</a>
+			  <a href="Login.html">Sign Out</a>
+			</div>
+		  </div>
+		</li>
+		</ul>
+	  </nav>
   
 
 
@@ -240,122 +245,22 @@ h1{
 
     <h1>Deposit Cheque Request</h1>
     
-    <ul id="progressbar">
-      <li class="active">Accpunt Info</li>
-	  <li>Cheque Details</li>
-	  <li>Payer Info</li>
-    </ul>
-    
     <fieldset>
-      <h2 class="fs-title">Account</h2>
-      <input type="text" name="number" placeholder="Account Number" />
-      <input type="date" name="name" placeholder="Account Holder Name" />
-	  <a href="Requests.html" class="submit action-button" target="_top">Cancel</a>
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    <fieldset>
-      <h2 class="fs-title">Cheque</h2>
-      <input type="text" name="amount" placeholder="Cheque Amount" />
-      <input type="date" name="date" placeholder="Date" />
-	  <a href="Requests.html" class="submit action-button" target="_top">Cancel</a>
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-      <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-	<fieldset>
+		<h2 class="fs-title">Account</h2>
+		<input type="text" name="number" placeholder="Account Number" />
+		<input type="date" name="name" placeholder="Account Holder Name" />
+		<h2 class="fs-title">Cheque</h2>
+		<input type="text" name="amount" placeholder="Cheque Amount" />
+		<input type="date" name="date" placeholder="Date" />
 		<h2 class="fs-title">Payer</h2>
 		<input type="text" name="name" placeholder="Payer Name" />
         <input type="text" name="number" placeholder="Account Number" />
 		<a href="Requests.html" class="submit action-button" target="_top">Cancel</a>
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		<a href="Requests.html" class="submit action-button" target="_top">Submit</a>
+		<!-- <a href="Requests.html" class="submit action-button" target="_top">Submit</a> -->
+		<button onclick="showAlert()" type="submit" class="submit action-button">Submit</button>
 	  </fieldset>
   </form>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script>
-
-    
-	//jQuery time
-	var current_fs, next_fs, previous_fs; //fieldsets
-	var left, opacity, scale; //fieldset properties which we will animate
-	var animating; //flag to prevent quick multi-click glitches
-	
-	$(".next").click(function(){
-		if(animating) return false;
-		animating = true;
-		
-		current_fs = $(this).parent();
-		next_fs = $(this).parent().next();
-		
-		//activate next step on progressbar using the index of next_fs
-		$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-		
-		//show the next fieldset
-		next_fs.show(); 
-		//hide the current fieldset with style
-		current_fs.animate({opacity: 0}, {
-			step: function(now, mx) {
-				//as the opacity of current_fs reduces to 0 - stored in "now"
-				//1. scale current_fs down to 80%
-				scale = 1 - (1 - now) * 0.2;
-				//2. bring next_fs from the right(50%)
-				left = (now * 50)+"%";
-				//3. increase opacity of next_fs to 1 as it moves in
-				opacity = 1 - now;
-				current_fs.css({
-			'transform': 'scale('+scale+')',
-			'position': 'absolute'
-		  });
-				next_fs.css({'left': left, 'opacity': opacity});
-			}, 
-			duration: 800, 
-			complete: function(){
-				current_fs.hide();
-				animating = false;
-			}, 
-			//this comes from the custom easing plugin
-			easing: 'easeInOutBack'
-		});
-	});
-	
-	$(".previous").click(function(){
-		if(animating) return false;
-		animating = true;
-		
-		current_fs = $(this).parent();
-		previous_fs = $(this).parent().prev();
-		
-		//de-activate current step on progressbar
-		$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-		
-		//show the previous fieldset
-		previous_fs.show(); 
-		//hide the current fieldset with style
-		current_fs.animate({opacity: 0}, {
-			step: function(now, mx) {
-				//as the opacity of current_fs reduces to 0 - stored in "now"
-				//1. scale previous_fs from 80% to 100%
-				scale = 0.8 + (1 - now) * 0.2;
-				//2. take current_fs to the right(50%) - from 0%
-				left = ((1-now) * 50)+"%";
-				//3. increase opacity of previous_fs to 1 as it moves in
-				opacity = 1 - now;
-				current_fs.css({'left': left});
-				previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
-			}, 
-			duration: 800, 
-			complete: function(){
-				current_fs.hide();
-				animating = false;
-			}, 
-			//this comes from the custom easing plugin
-			easing: 'easeInOutBack'
-		});
-	});
-	
-	
-	</script>
 
 </body>
 </html>

@@ -2,10 +2,92 @@
 <html lang="en">
 
 <link rel="stylesheet" href ="Reminders.css" />
+<!-- <link rel="stylesheet" href ="Home.css" /> -->
+
+
 
 <head>
   <style>
     
+img:hover {
+background-color: #fff;
+}
+    ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  /*background-color: linear-gradient(#51087c, #51087c 60%, #51087c);*/
+  /* background-color: #580348;*/
+  background-color: #51087c;
+}
+
+
+ul.navbar2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #51087c;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  
+  
+ /* width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;*/
+}
+
+p {
+  color:#fdf3ff; 
+  font-size: 18px; 
+}
+
+/*
+
+body {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}*/
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
   body{
     background-color:#fbf2fa;
   }
@@ -221,7 +303,7 @@ ul.navbar {
     font-style:italic;
   }
   button{
-    margin-left: 1350px;
+    margin-left: 5px;
     color:rgb(0, 0, 0);
     background-color: #51087c;
   }
@@ -240,23 +322,33 @@ ul.navbar {
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="Notifications.html">Notifications</a></li>
-          <li><a href="Reminders.html">Reminders</a></li>
-          <li><a href="Transfers.html">Transfers</a></li>
-          <li><a href="CreditCards.html">Credit Cards</a></li>
-          <li><a href="Loans.html">Loans</a></li>
-          <li><a href="Requests.html">Requests</a></li>
-          <li><a href="History.html">History</a></li>
-          <li><a href="PayBills.html">Pay Bills</a></li>
-          <li><a href="Settings.html">Settings</a></li>
-          <li><a href="ReportIssue.html">Report Issue</a></li>
-          <li><a href="Login.html">Log out</a></li>
-        </ul>
-      </nav>
-    
+  <nav>
+    <ul class="navbar">
+     <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+      <li><a href="Home.html">🏠Home</a></li>
+      <li><a href="Notifications.html"> 🔔Notifications</a></li>
+      <li><a href="Reminders.html">📝Reminders</a></li>
+      <li><a href="Transfers.html">📤Transfers</a></li>
+      <li><a href="CreditCards.html">💳Credit Cards</a></li>
+      <li><a href="Loans.html">💰Loans</a></li>
+      <li><a href="Requests.html">📃Requests</a></li>
+      <li><a href="Transactions.html">⌛Transactions</a></li>
+      <li><a href="PayBills.html">💲Pay Bills</a></li>
+      <li><a href="Settings.html">⚙️Settings</a></li>
+      <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+      <li>
+        <img src="Account.png" onclick="toggleDropdown()" class="myDropdown" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+        <div id="myDropdown" class="dropdown-content">
+
+          <a href="OpenNewAccount.html">Open a new Account</a>
+          <a href="AccountInfo.html">Account info</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
+        </div>
+      </div>
+    </li>
+    </ul>
+  </nav>
       <div class="header">
         <h1>Upcoming Reminders</h1>
         <button><a class="set-reminder" href="SetReminders.html">New Reminder</a></button>
@@ -273,7 +365,7 @@ ul.navbar {
           </div>
           <div class="timeline-section">
             <div class="timeline-date">
-              Monday, June 5th
+              June 2023
             </div>
             <div class="row">
               <div class="col-sm-4">
@@ -285,20 +377,34 @@ ul.navbar {
                     <a class="btn btn-xs btn-default pull-right">Details</a>
                     <div class="box-item"><strong>Loan Type</strong>: Car</div>
                     <div class="box-item"><strong>Loan Amount</strong>: 10,000 LE</div>
-                    <div class="box-item"><strong>End Date</strong>: 15/12/2024</div>
+                    <div class="box-item"><strong>Loan End Date</strong>: 15/12/2024</div>
                   </div>
                   <div class="box-footer">- SBC</div>
                 </div>
               </div>
-              
-      
             </div>
-      
+            <div class="col-sm-4">
+              <div class="timeline-box">
+                <div class="box-title">
+                  <i class="fa fa-tasks text-primary" aria-hidden="true"></i> <label>Credit Card Payment</label>
+                </div>
+                <div class="box-content">
+                  <a class="btn btn-xs btn-default pull-right">Details</a>
+                    <div class="box-item"><strong>Type</strong>: Minimum Amount</div>
+                    <div class="box-item"><strong>Amount</strong>: 1463 LE</div>
+                    <div class="box-item"><strong>Due</strong>: 27/06/2023</div>
+                </div>
+                <div class="box-footer">- SBC</div>
+              </div>
+            </div>
           </div>
+          </div>
+
+
       
           <div class="timeline-section">
             <div class="timeline-date">
-              Thursday, June 23rd
+              July 2023
             </div>
             <div class="row">
               <div class="col-sm-4">
@@ -310,39 +416,25 @@ ul.navbar {
                     <a class="btn btn-xs btn-default pull-right">Details</a>
                     <div class="box-item"><strong>Type</strong>: Minimum Amount</div>
                     <div class="box-item"><strong>Amount</strong>: 1463 LE</div>
-                    <div class="box-item"><strong>Due</strong>: 27/06/2023</div>
+                    <div class="box-item"><strong>Due</strong>: 27/07/2023</div>
                   </div>
                   <div class="box-footer">- SBC</div>
                 </div>
               </div>
-              
-              <div class="col-sm-4">
-                <div class="timeline-box">
-                  <div class="box-title">
-                    <i class="fa fa-tasks text-primary" aria-hidden="true"></i> <label>Credit Card Payment</label>
-                  </div>
-                  <div class="box-content">
-                    <a class="btn btn-xs btn-default pull-right">Details</a>
-                    <div class="box-item"><strong>Employee</strong>: Sam</div>
-                    <div class="box-item"><strong>To Do</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nisi nulla, viverra quis felis sit amet, lacinia feugiat odio. Aliquam sed orci elementum, volutpat dolor eget, venenatis nunc</div>
-                  </div>
-                  <div class="box-footer">- Marlyn</div>
-                </div>
-              </div>
-            </div>
             
               
               <div class="col-sm-4">
                 <div class="timeline-box">
                   <div class="box-title">
-                    <i class="fa fa-tasks text-primary" aria-hidden="true"></i> New Job To Do
+                    <i class="fa fa-tasks text-primary" aria-hidden="true"></i><label>Loan Payment</label> 
                   </div>
                   <div class="box-content">
                     <a class="btn btn-xs btn-default pull-right">Details</a>
-                    <div class="box-item"><strong>Employee</strong>: Jones</div>
-                    <div class="box-item"><strong>To Do</strong>: Proin sit amet aliquet neque, eget sagittis nunc. Proin convallis lectus quis volutpat pharetra. Donec quis ultrices eros. Ut eget mi faucibus.</div>
+                    <div class="box-item"><strong>Loan Type</strong>: Car </div>
+                    <div class="box-item"><strong>Loan Amount</strong>: 10,000 LE</div>
+                    <div class="box-item"><strong>Loan End Date</strong>: 15/12/2024</div>
                   </div>
-                  <div class="box-footer">- Marlyn</div>
+                  <div class="box-footer">- SBC</div>
                 </div>
               </div>
             </div>
@@ -354,3 +446,5 @@ ul.navbar {
         </div>
       </div>
 </body>
+</html>
+<script src="suicideguy.js"></script>
