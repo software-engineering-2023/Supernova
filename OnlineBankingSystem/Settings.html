@@ -1,64 +1,23 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <style>
-    /* Optional CSS styles for styling the navigation bar */
-    ul.navbar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #1d178c;
-    }
-
-    ul.navbar li {
-      float: left;
-    }
-
-    ul.navbar li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    ul.navbar li a:hover {
-      background-color: #111;
-    }
-    img.logo {
-      vertical-align: right; /* Align the image vertically in the navigation bar */
-      height: 30px; /* Adjust the height of the image as needed */
-      margin-right: 20px; /* Add margin to separate the image from the navigation links */
-    }
-    .client-info {
-      position: absolute;
-      top: 10px; 
-      right: 10px; 
-      text-align: left;
-    }
-
-    p {
-      color: rgb(6, 6, 113); 
-      font-size: 18px; 
-    }
-   
-  </style>
+  <title>Settings</title>
+  <link rel="stylesheet" href="Settings.css">
 </head>
 <body>
   <nav>
     <ul class="navbar">
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="Notifications.html">Notifications</a></li>
-      <li><a href="Reminders.html">Reminders</a></li>
-      <li><a href="Transfers.html">Transfers</a></li>
-      <li><a href="CreditCards.html">Credit Cards</a></li>
-      <li><a href="Loans.html">Loans</a></li>
-      <li><a href="Requests.html">Requests</a></li>
-      <li><a href="History.html">History</a></li>
-      <li><a href="PayBills.html">Pay Bills</a></li>
-      <li><a href="Settings.html">Settings</a></li>
-      <li><a href="ReportIssue.html">Report Issue</a></li>
+     <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+      <li><a href="Home.html">🏠Home</a></li>
+      <li><a href="Notifications.html"> 🔔Notifications</a></li>
+      <li><a href="Reminders.html">📝Reminders</a></li>
+      <li><a href="Transfers.html">📤Transfers</a></li>
+      <li><a href="CreditCards.html">💳Credit Cards</a></li>
+      <li><a href="Loans.html">💰Loans</a></li>
+      <li><a href="Requests.html">📃Requests</a></li>
+      <li><a href="History.html">⌛History</a></li>
+      <li><a href="PayBills.html">💲Pay Bills</a></li>
+      <li><a href="Settings.html">⚙️Settings</a></li>
+      <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
       <li><a href="Login.html">Log out</a></li>
     </ul>
   </nav>
@@ -68,5 +27,78 @@
     <p>Client ID: 123456</p>
     <p>Last Login: (date and time)</p>
   </div>
+  <div class="table">
+    <h2>Change Password</h2>
+    <table>
+      <tr>
+        <th>Current Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>New Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>Confirm Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+      <td>  <button> Apply Password </button></td>
+      </tr>
+      
+    </table>
+
+    <h2>Biometric authentication login registered devices</h2>
+    <table id="BetweenMyAccounts" class="input-table">
+      <tr>
+        <th>Android Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" >
+          </td>
+      </tr>
+      <tr>
+        <th>IOS Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" checked >
+          </td>
+      </tr>
+      <tr>
+        <th class="header"></th>
+      </tr>
+    </table>
+    <p class="note">  Note: Deactivate Registration will disable Biometric Authentication Login from all devices    </p>
+    <h2>Push Notifications</h2>
+    <table>
+      <tr>
+        <th>Android Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" >
+        </td>
+      </tr>
+      <tr>
+        <th>IOS Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" checked>
+        </td>
+      <tr>
+        <th>Web Browser</th>
+        <td>
+          <input type="checkbox" class="toggle">
+        </td>      
+      </tr>
+    </table>
+    <p class="note">  Note: Disabling the service will unregister the device from receiving alerts via push notifications.</p>
+    <table>
+        <tr>
+          <th>Feedback Preferences</th>
+          <td>
+            <input type="checkbox" class="toggle" checked>
+          </td>
+        </tr>
+    </table>
+    <p class="note">  Note: Disabling this will disable the feedback window after every transaction.</p>
+    <button> Apply Changes </button>
+  </div>
+
 </body>
 </html>

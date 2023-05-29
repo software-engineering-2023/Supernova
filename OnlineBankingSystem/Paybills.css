@@ -1,0 +1,86 @@
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 150px;
+    width: 100%;
+    /* background-color: linear-gradient(#51087c, #51087c 60%,#51087c); */
+    /* background-color: #580348; */
+    background-color:#51087c;
+  }
+  ul.navbar li {
+    float: left;
+  }
+  
+  ul.navbar li a {
+    display: block;
+    color: #fdf3ff;
+    margin-top:100px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.navbar li a:hover {
+    background-color: #fdf3ff;
+    color: #51087c;
+  }
+  img.logo {
+    vertical-align: left; /* Align the image vertically in the navigation bar */
+    height: 10px; /* Adjust the height of the image as needed */
+    margin-right: 20px; /* Add margin to separate the image from the navigation links */
+  }
+  
+  .icon-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 90px; /* Adjust the height of the image as needed */
+    width: 90px;
+  }
+  .sidebar {
+    display: inline-block;
+    margin-top: 5px;
+    width: 200px;
+    height: 450px;
+    background-color: #51087c;
+    float: left;
+    border-radius: 10px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 50px;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    :hover{
+    background-color: green;
+
+    }
+    
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .container {
+    display:none;
+    background-color: gray;  
+    float: right;
+    width: calc(100% - 240px); /* Adjust the width as needed */
+    margin-top: 20px;
+    padding: 20px;
+    height: 380px; /* Temporary */
+    border-radius: 10px;
+  }
+ 
+

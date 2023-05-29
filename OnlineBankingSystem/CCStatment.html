@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="CreditCards.CSS">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: aliceblue;
+    }
+    th{
+        color: lightsalmon;
+    }
+    td{
+        color:black
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .total {
+      font-weight: bold;
+    }
+  </style>
+<html>
+<head>
+  <script src="CreditCards.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Credit Card Statement</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+
+      crossorigin="anonymous">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Notifications.html">Notifications</a></li>
+      <li><a href="Reminders.html">Reminders</a></li>
+      <li><a href="Transfers.html">Transfers</a></li>
+      <li><a href="CreditCards.html">Credit Cards</a></li>
+      <li><a href="Loans.html">Loans</a></li>
+      <li><a href="Requests.html">Requests</a></li>
+      <li><a href="History.html">History</a></li>
+      <li><a href="PayBills.html">Pay Bills</a></li>
+      <li><a href="ReportIssue.html">Report Issue</a></li>
+      <li>
+          <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon">
+          <div id="myDropdown" class="dropdown-content">
+            <a href="AccountInfo.html">Account info</a>
+            <a href="Settings.html">Settings</a>
+            <a href="Login.html">Sign Out</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <h1>Credit Card Statement</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Transaction Date</th>
+        <th>Description</th>
+        <th>Curreny</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01/05/2023</td>
+        <td>Grocery</td>
+        <td>EGP</td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>05/05/20023</td>
+        <td>Talabat</td>
+        <td>EGP</td>
+        <td>$30.00</td>
+      </tr>
+      <tr>
+        <td>17/05/2023</td>
+        <td>Sephora</td>
+        <td>EGP</td>
+        <td>$250.00</td>
+      </tr>
+      <tr>
+        <td>20/05/2023</td>
+        <td>Uber</td>
+        <td>EGP</td>
+        <td>$144.00</td>
+      </tr>
+      <tr>
+        <td>28/05/2023</td>
+        <td>Starbucks</td>
+        <td>EGP</td>
+        <td>$90.00</td>
+      </tr>
+      
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" class="total">Total</td>
+        <td class="TOTAL:">$564.00</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
