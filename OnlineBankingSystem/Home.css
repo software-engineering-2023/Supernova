@@ -17,11 +17,31 @@ ul.navbar {
     padding: 0;
     overflow: hidden;
     background-color: #51087c;
-    position: fixed;
     bottom: 0;
     width: 100%;
     height: 40px;
+    
+    
+   /* width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;*/
   }
+
+  p {
+    color:#fdf3ff; 
+    font-size: 18px; 
+  }
+
+  /*
+
+  body {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}*/
 
   ul.navbar li {
     float: left;
@@ -40,6 +60,33 @@ ul.navbar {
     background-color: #fdf3ff;
     color: #51087c;
   }
+
+  /*--------------------------------------*/
+
+  ul.navbar2 li {
+    float: left;
+  }
+  ul.navbar2 p {
+    float: left;
+      color:#fdf3ff; 
+    font-size: 18px; 
+  }
+
+  ul.navbar2 li a {
+    display: block;
+    color: #fdf3ff;
+    margin-top:160px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul.navbar2 li a:hover {
+    background-color: #fdf3ff;
+    color: #51087c;
+  }
+
+
   img.logo {
     vertical-align: left; /* Align the image vertically in the navigation bar */
     height: 10px; /* Adjust the height of the image as needed */
@@ -131,21 +178,23 @@ a{
 
     h5 {
       font-size: 20px;
+      font-weight: bold;
       text-align: left;
       color:#e0aad6; 
       padding: 25px 30px;
       position: absolute;
-      top: 250px;  
+      top: 270px;  
       left:   20px; 
       height:    80px;   }
 
     header {
         font-size: 15px;
         text-align: left;
+        font-weight: bold;
         color:#e0aad6; 
         padding: 25px 30px;
         position: absolute;
-        top: 290px;  
+        top: 310px;  
         right:   130px; 
         height:    80px;   }
 
@@ -155,22 +204,24 @@ a{
       color:#e0aad6; 
       padding: 25px 30px;
       position: absolute;
-      top: 300;  
+      top: 180;  
       left:   20px; 
       height:    80px; 
-    margin-top: 10px; 
+    margin-top: -55px; 
    }
 
-      h7 {
-        font-size: 20px;
-        text-align: left;
-        color:#e0aad6; 
-        padding: 25px 30px;
-        position: absolute;
-        top: 600;  
-        left:   20px; 
-        height:    80px;   }
-  
+    h7 {
+      font-size: 20px;
+      text-align: left;
+      color:#e0aad6; 
+      padding: 25px 30px;
+      position: relative;
+      font-weight: bold;
+      top: -10px;  
+      left:-30px; 
+      height: 80px; 
+    }
+
   .responsive-table li {
     border-radius: 3px;
     padding: 25px 30px;
@@ -288,7 +339,7 @@ a{
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #a4c2fd;
+      background-color: #e0aad6;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
