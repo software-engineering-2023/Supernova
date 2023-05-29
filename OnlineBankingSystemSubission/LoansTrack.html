@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body {
+             background-color: #fdf3ff;
+          }
+   
+
+
+          ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  /*background-color: linear-gradient(#51087c, #51087c 60%, #51087c);*/
+  /* background-color: #580348;*/
+  background-color: #51087c;
+}
+
+ul.navbar2 li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
+img:hover {
+background-color: #fff;
+}
+       </style>
+        <link rel="stylesheet" href ="Home.css"/>
+        <link rel="stylesheet" href="LoansTrack.css"/>
+      </head>
+      <body>
+        <body>
+          <nav>
+            <ul class="navbar">
+             <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+              <li><a href="Home.html">🏠Home</a></li>
+              <li><a href="Notifications.html"> 🔔Notifications</a></li>
+              <li><a href="Reminders.html">📝Reminders</a></li>
+              <li><a href="Transfers.html">📤Transfers</a></li>
+              <li><a href="CreditCards.html">💳Credit Cards</a></li>
+              <li><a href="Loans.html">💰Loans</a></li>
+              <li><a href="Requests.html">📃Requests</a></li>
+              <li><a href="Transactions.html">⌛Transactions</a></li>
+              <li><a href="PayBills.html">💲Pay Bills</a></li>
+              <li><a href="Settings.html">⚙Settings</a></li>
+              <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+              <li>
+                <img onclick="toggleDropdown()" class="myDropdown" src="Account.png" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+                <div id="myDropdown" class="dropdown-content">
+        
+                  <a href="Requests.html">Open a new Account</a>
+                  <a href="AccountInfo.html">Account info</a>
+                  <a href="Settings.html">Settings</a>
+                  <a href="Login.html">Sign Out</a>
+                </div>
+              </div>
+            </li>
+            </ul>
+          </nav>
+          <label>Current Loans: </label>
+          <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: 67"></div>
+<p> You've payed 67% of your Car Loan <br>
+          Due Date 31/12/2023 </p>
+   </body>
+</body>
