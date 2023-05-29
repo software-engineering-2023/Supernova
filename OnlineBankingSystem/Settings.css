@@ -101,4 +101,11 @@ a{
 
   .table{
     position: center;
+    background-color: lightgrey;
+    width: 700px;
+    border: 15px solid plum;
+    padding: 50px;
+    margin: 50px 50px 50px 50px;
+    position: 50% 50%;
+    
   }
