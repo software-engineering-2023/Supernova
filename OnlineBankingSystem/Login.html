@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="Login.css">
+	
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,6 @@
     <title>Login</title>
 </head>
 <body>
-	<img class="logo" src="Supernova.png" alt="Logo">
-
     <h2></h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
@@ -61,6 +59,24 @@
 </footer>
 </body>
 </html>
-<script src="Login.js"></script>
+<script>
+	 document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    
 
-  
+    console.log(username);
+
+    if (username === "user" && password === "user") {
+        window.location.href="Home.html";
+    } else if(username === "banker" && password === "banker") {
+      window.location.href="BankerHome.html";
+    }else if (username === "admin" && password === "admin"){
+      window.location.href="AdminHome.html";
+    }else{
+      alert("invalid username or password");
+    }
+  });
+  </script>
