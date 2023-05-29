@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<script src="suicideguy.js"></script>
+  <link rel="stylesheet" href ="Home.css"/>
+<head>
+  <style>
+
+
+ul.navbar2 li {
+  float: left;
+}
+ul.navbar2 p {
+  float: left;
+    color:#fdf3ff; 
+  font-size: 18px; 
+}
+
+ul.navbar2 li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar2 li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
+img:hover {
+background-color: #fff;
+}
+
+    /* Optional CSS styles for styling the navigation bar */
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #51087c;
+    }
+
+    ul.navbar li {
+      float: left;
+    }
+
+    ul.navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.navbar li a:hover {
+      background-color: #111;
+    }
+   
+
+
+    /*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
+	/*Image only BG fallback*/
+	
+	/*background = gradient + image pattern combo*/
+	/* background: 
+		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6)); */
+    background-color:#fbf2fa;
+  
+}
+
+body {
+	font-family: montserrat, arial, verdana;
+}
+/*form styles*/
+#msform {
+	width: 700px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 550px;
+	margin: 0 10%;
+	margin-right: 20px;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+select{
+    padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #51087c;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #da2a9f;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+
+h1{
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #51087c;
+}
+
+
+
+  </style>
+
+<script>
+    function showAlert() {
+      alert(" ✅  Your transfer has been successfull");
+    }
+  </script>
+
+
+</head>
+<body>
+	<nav>
+		<ul class="navbar">
+		 <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+		  <li><a href="Home.html">🏠Home</a></li>
+		  <li><a href="Notifications.html"> 🔔Notifications</a></li>
+		  <li><a href="Reminders.html">📝Reminders</a></li>
+		  <li><a href="Transfers.html">📤Transfers</a></li>
+		  <li><a href="CreditCards.html">💳Credit Cards</a></li>
+		  <li><a href="Loans.html">💰Loans</a></li>
+		  <li><a href="Requests.html">📃Requests</a></li>
+		  <li><a href="Transactions.html">⌛Transactions</a></li>
+		  <li><a href="PayBills.html">💲Pay Bills</a></li>
+		  <li><a href="Settings.html">⚙Settings</a></li>
+		  <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+		  <li>
+			<img onclick="toggleDropdown()" class="myDropdown" src="Account.png" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+			<div id="myDropdown" class="dropdown-content">
+	
+			  <a href="Requests.html">Open a new Account</a>
+			  <a href="AccountInfo.html">Account info</a>
+			  <a href="Settings.html">Settings</a>
+			  <a href="Login.html">Sign Out</a>
+			</div>
+		  </div>
+		</li>
+		</ul>
+	  </nav>
+ 
+  
+<form id="msform">
+   
+	<h1>Internal Transfer</h1>
+
+    <fieldset>
+      <h2 class="fs-title">Sender</h2>
+      <input type="text" name="name" placeholder="Name" />
+      <select>
+        <option value="option1">Account 1</option>
+        <option value="option2">Account 2</option>
+        <option value="option3">Account 3</option>
+      </select>
+      <h2 class="fs-title">Beneficiary</h2>
+      <input type="text" name="name" placeholder="Name" />
+      <input type="text" name="number" placeholder="Account Number" />
+      <h2 class="fs-title">Bank Info</h2>
+      <input type="text" name="name" placeholder="Name" />
+      <input type="text" name="code" placeholder="Bank Code" />
+		<h2 class="fs-title">Transfer Info</h2>
+		<input type="text" name="amount" placeholder="Amount" />
+		<select>
+			<option value="option1">USD</option>
+			<option value="option2">EUR</option>
+			<option value="option3">EGP</option>
+			<option value="option3">SAR</option>
+		  </select>
+		<input type="date" name="date" placeholder="Date" />
+		<input type="text" name="Purpose" placeholder="Purpose" />
+		<a href="Transfers.html" class="submit action-button" target="_top">Cancel</a>
+		<!-- <a href="History.html" class="submit action-button" target="_top">Submit</a> -->
+		<button onclick="showAlert()" type="submit" class="submit action-button">Submit</button>
+	  </fieldset>
+  </form>
+
+
+</body>
+</html>
