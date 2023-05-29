@@ -1,0 +1,112 @@
+ul.navbar {
+    list-style-type: none;
+    /* margin-top: -100px; */
+    /* position: sticky; */
+     top: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+    /*background-color: linear-gradient(#51087c, #51087c 60%, #51087c);*/
+    /* background-color: #580348;*/
+    background-color:#51087c;
+  }
+  ul.navbar li {
+    float: left;
+  }
+  
+  ul.navbar li a {
+    display: block;
+    color: #fdf3ff;
+    margin-top:160px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.navbar li a:hover {
+    background-color: #fdf3ff;
+    color: #51087c;
+  }
+  img.logo {
+    vertical-align: left; /* Align the image vertically in the navigation bar */
+    height: 10px; /* Adjust the height of the image as needed */
+    margin-right: 20px; /* Add margin to separate the image from the navigation links */
+  }
+  
+  .icon-image {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    height: 130px; /* Adjust the height of the image as needed */
+    width: 130px;
+  }
+
+ 
+button {
+	margin: auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+	border-radius: 20px;
+	background-color: #667292;
+	box-shadow: 10px 15px 40px #36486b;
+	width: 300px;
+	height: 100px;
+	font-size: 50px;
+	font-family: cambria;
+	color: #4c1a3d;
+    gap: 40px;
+	border: none;
+}
+
+button:hover {
+	border: none;
+	background-color: #bea1c5;
+	opacity: 1;
+	color: #611860;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	/* position: ; */
+}
+
+.btn:hover {
+	transition: 0.5s ease-in-out;
+	background: #8d9db6;
+}
+
+button {
+	--color1: #955f92;
+	--color2: #eee9ec;
+	font-family: cambria;
+	text-align: center;
+	font-size: 46px;
+	/* background: repeating-linear-gradient(
+		45deg,
+		var(--color1),
+		var(--color1) 30px,
+		var(--color2) 30px,
+		var(--color2) 60px */
+	/* ); */
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+	animation: 40s linear 0s infinite move;
+}
+
+@keyframes move {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: 1000px;
+	}
+}
