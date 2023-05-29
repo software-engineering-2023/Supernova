@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <head>
+
+
   <title>Settings</title>
+  <script src="suicideguy.js"></script>
   <link rel="stylesheet" href="Settings.css">
+
 </head>
 <body>
   <nav>
     <ul class="navbar">
+
+
+
      <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
       <li><a href="Home.html">🏠Home</a></li>
       <li><a href="Notifications.html"> 🔔Notifications</a></li>
@@ -18,15 +25,19 @@
       <li><a href="PayBills.html">💲Pay Bills</a></li>
       <li><a href="Settings.html">⚙️Settings</a></li>
       <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
-      <li><a href="Login.html">Log out</a></li>
+      <li>
+        <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="OpenAccount.html">Open a new accountr</a>
+          <a href="AccountInfo.html">Account info</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
+        </div>
+      </div>
+    </li>
     </ul>
   </nav>
-  <div class="client-info">
-    <img src="Suicide.png" alt="Suicide" class="suicide">
-    <p>Client Name: Jana Korayem</p>
-    <p>Client ID: 123456</p>
-    <p>Last Login: (date and time)</p>
-  </div>
+ 
   <div class="table">
     <h2>Change Password</h2>
     <table>
