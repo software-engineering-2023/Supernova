@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+	<link rel="stylesheet" href="Login.css">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Login.css">
-    <script src="Login.js"></script>
     <title>Login</title>
 </head>
 <body>
+	<img class="logo" src="Supernova.png" alt="Logo">
+
     <h2></h2>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
@@ -22,20 +24,20 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form id="login-form">
-			<h1>Sign in</h1>
-			<input type="username" placeholder="Username" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-            <button type="submit" >Sign In</button>
-            <script >
-                document.getElementById("login-form").addEventListener("submit", function () {
-                    event.preventDefault();
-                   window.location.href = "home.html";
-                });
-                </script>
-		</form>
+		<div class="container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        
+        <button type="submit" >Log In</button>
+      </form>
+    </div>
 	</div>
+	
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
@@ -59,4 +61,6 @@
 </footer>
 </body>
 </html>
-</html>
+<script src="Login.js"></script>
+
+  
