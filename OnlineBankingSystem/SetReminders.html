@@ -4,8 +4,177 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="SetReminders.css">
+  <!-- <link rel="stylesheet" href="SetReminders.css"> -->
   
+  <style>
+    ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #51087c;
+  }
+  body{
+    background-color:#fbf2fa;
+  }
+
+  ul.navbar li {
+    float: left;
+  }
+
+  ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  ul.navbar li a:hover {
+    background-color: #02062c;
+  }
+  img.logo {
+    vertical-align: right; /* Align the image vertically in the navigation bar */
+    height: 30px; /* Adjust the height of the image as needed */
+    margin-right: 20px; /* Add margin to separate the image from the navigation links */
+  }
+  /* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    border: 3px solid rgb(2, 35, 94);
+    padding: 30px;
+    background-color: #f0f9fd;
+    border-radius: 10px;
+  } */
+
+  .container {
+    background-color: #fff;
+    border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+    position: center;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 375px;
+  }
+
+  h1 {
+    color: #51087c; 
+    font-size: 35px; 
+    margin-left: 375px;
+    margin-top: 20px;
+  }
+
+  Input {
+    color: rgb(97, 97, 97); 
+    font-size: 20px; 
+  }
+
+  select {
+    color: rgb(97, 97, 97); 
+    font-size: 20px; 
+  }
+  table {
+    width: 750px;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #ffffff;
+    font-size: 25px;
+  }
+  body{
+    background-color: #ffffff;
+  }
+  th{
+    color: #51087c; 
+  }
+  /* .client-info {
+    position: absolute;
+    margin-top: 20px;
+    top: 20px; 
+    right: 10px; 
+    text-align: left;
+  } */
+
+  p {
+    color: #51087c; 
+    font-size: 18px; 
+  }
+ 
+
+  .form-container {
+    position: center;
+    top: 0;
+    height: 50%;
+    transition: all 0.6s ease-in-out;
+    
+  }
+
+  .sign-in-container {
+    position: center;
+    left: 0;
+    width: 50%;
+    z-index: 2;
+  }
+
+  button {
+    border-radius: 20px;
+    border: 1px solid #000000;
+    background-color: #51087c;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+     padding: 12px 45px;
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 10px; 
+    text-decoration: none;
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+  }
+
+  .overlay-right {
+    right: 0;
+    transform: translateX(0);
+    background-color: #e0aad6;
+  }
+a{
+  color: white;
+}
+  </style>
+
+
+
 </head>
 <body>
   <nav>
@@ -24,15 +193,8 @@
       <li><a href="Login.html">Log out</a></li>
     </ul>
   </nav>
- 
-  <div class="client-info">
-    <img src="Suicide.png" alt="Suicide" class="suicide">
-    <p>Client Name: Jana Korayem</p>
-    <p>Client ID: 123456</p>
-    <p>Last Login: (date and time)</p>
-  </div>
 
-    <h1>Reminders</h1>
+    <h1>Set New Reminder</h1>
     <div id="reminder" class="container">
       <div class="form-container sign-in-container"></div>
         <div class="overlay-panel overlay-right"></div>
@@ -60,7 +222,8 @@
                 <td><input type="date" placeholder="date"></td>
               </tr>
             </table>
-            <button type="submit" >Set</button>
+            
+            <button><a   href="Reminders.html">Set</button>
         </div>
       </div>
     </div>

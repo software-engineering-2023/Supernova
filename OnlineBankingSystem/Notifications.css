@@ -1,3 +1,4 @@
+
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -80,7 +81,6 @@ img.logo {
 }
 
 
-
 body {
     background-color:#fbf2fa;
   }
@@ -126,7 +126,9 @@ body {
   
   .bell .layer-1 {
     position:flex;
-    color:#333642;
+
+    color:#1d1e22;
+
     z-index:9;
     margin-top: -30px;
     animation: animation-layer-1 5000ms infinite;      
@@ -139,7 +141,8 @@ body {
     color:#1d1e22;
     z-index:8;
     position:absolute;top:0;left:0;
-    margin-top: -50px;   
+
+    margin-top: -30px;   
     animation: animation-layer-2 5000ms infinite;    
   }
   
@@ -148,7 +151,8 @@ body {
     color:#333642;
     z-index:7;
     position:absolute;top:0;left:0; 
-    margin-top: -50px; 
+
+    margin-top: -30px; 
     animation: animation-layer-3 5000ms infinite;    
   }
   
