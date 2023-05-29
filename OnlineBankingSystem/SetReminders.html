@@ -1,233 +1,318 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="SetReminders.css"> -->
-  
   <style>
+    /* Optional CSS styles for styling the navigation bar */
     ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #51087c;
-  }
-  body{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #51087c;
+    }
+
+    ul.navbar li {
+      float: left;
+    }
+
+    ul.navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul.navbar li a:hover {
+      background-color: #111;
+    }
+   
+
+
+    /*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+html {
+	height: 100%;
     background-color:#fbf2fa;
-  }
+  
+}
 
-  ul.navbar li {
-    float: left;
-  }
+body {
+	font-family: montserrat, arial, verdana;
+}
 
-  ul.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+
+#msform {
+	width: 700px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 550px;
+	margin: 0 10%;
+	margin-right: 20px;
+	position: relative;
+}
+
+
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+
+
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+select{
+    padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+
+option{
+    padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+
+#msform .action-button {
+	width: 100px;
+	background: #51087c;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 5px;
     text-decoration: none;
-  }
+    font-size: 14px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #da2a9f;
+}
 
-  ul.navbar li a:hover {
-    background-color: #02062c;
-  }
-  img.logo {
-    vertical-align: right; /* Align the image vertically in the navigation bar */
-    height: 30px; /* Adjust the height of the image as needed */
-    margin-right: 20px; /* Add margin to separate the image from the navigation links */
-  }
-  /* .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: 300px;
-    width: 500px;
-    border: 3px solid rgb(2, 35, 94);
-    padding: 30px;
-    background-color: #f0f9fd;
-    border-radius: 10px;
-  } */
 
-  .container {
-    background-color: #fff;
-    border-radius: 10px;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-        0 10px 10px rgba(0,0,0,0.22);
-    position: center;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-left: 375px;
-  }
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
 
-  h1 {
-    color: #51087c; 
-    font-size: 35px; 
-    margin-left: 375px;
-    margin-top: 20px;
-  }
+h1{
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #51087c;
+}
+/* ///////////////////////////////////////// */
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  /*background-color: linear-gradient(#51087c, #51087c 60%, #51087c);*/
+  /* background-color: #580348;*/
+  background-color: #51087c;
+}
 
-  Input {
-    color: rgb(97, 97, 97); 
-    font-size: 20px; 
-  }
 
-  select {
-    color: rgb(97, 97, 97); 
-    font-size: 20px; 
-  }
-  table {
-    width: 750px;
-    border-collapse: collapse;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+ul.navbar2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #51087c;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  
+  
+ /* width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;*/
+}
 
-  th, td {
-    padding: 8px;
-    text-align: left;
-  }
+p {
+  color:#fdf3ff; 
+  font-size: 18px; 
+}
 
-  th {
-    background-color: #ffffff;
-    font-size: 25px;
-  }
-  body{
-    background-color: #ffffff;
-  }
-  th{
-    color: #51087c; 
-  }
-  /* .client-info {
-    position: absolute;
-    margin-top: 20px;
-    top: 20px; 
-    right: 10px; 
-    text-align: left;
-  } */
+/*
 
-  p {
-    color: #51087c; 
-    font-size: 18px; 
-  }
- 
+body {
+  min-height: 100%;
 
-  .form-container {
-    position: center;
-    top: 0;
-    height: 50%;
-    transition: all 0.6s ease-in-out;
-    
-  }
+  display: flex;
+  flex-direction: column;
+}*/
 
-  .sign-in-container {
-    position: center;
-    left: 0;
-    width: 50%;
-    z-index: 2;
-  }
+ul.navbar li {
+  float: left;
+}
 
-  button {
-    border-radius: 20px;
-    border: 1px solid #000000;
-    background-color: #51087c;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-     padding: 12px 45px;
-    letter-spacing: 1px; 
-    text-transform: uppercase;
-    transition: transform 80ms ease-in;
-    margin-top: 10px; 
-    text-decoration: none;
-  }
+ul.navbar li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  button:active {
-    transform: scale(0.95);
-  }
+ul.navbar li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
 
-  button:focus {
-    outline: none;
-  }
+/*--------------------------------------*/
 
-  button.ghost {
-    background-color: transparent;
-    border-color: #FFFFFF;
-  }
+ul.navbar2 li {
+  float: left;
+}
+ul.navbar2 p {
+  float: left;
+    color:#fdf3ff; 
+  font-size: 18px; 
+}
 
-  .overlay-right {
-    right: 0;
-    transform: translateX(0);
-    background-color: #e0aad6;
-  }
-a{
-  color: white;
+ul.navbar2 li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar2 li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
+img:hover {
+background-color: #fff;
+}
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  /*background-color: linear-gradient(#51087c, #51087c 60%, #51087c);*/
+  /* background-color: #580348;*/
+  background-color: #51087c;
 }
   </style>
 
 
+<script>
+	function showAlert() {
+      alert(" ✅  Your request has been submitted successfully");
+    }
+  
+</script>
 
 </head>
 <body>
   <nav>
     <ul class="navbar">
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="Notifications.html">Notifications</a></li>
-      <li><a href="Reminders.html">Reminders</a></li>
-      <li><a href="Transfers.html">Transfers</a></li>
-      <li><a href="CreditCards.html">Credit Cards</a></li>
-      <li><a href="Loans.html">Loans</a></li>
-      <li><a href="Requests.html">Requests</a></li>
-      <li><a href="History.html">History</a></li>
-      <li><a href="PayBills.html">Pay Bills</a></li>
-      <li><a href="Settings.html">Settings</a></li>
-      <li><a href="ReportIssue.html">Report Issue</a></li>
-      <li><a href="Login.html">Log out</a></li>
-    </ul>
-  </nav>
+     <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+      <li><a href="Home.html">🏠Home</a></li>
+      <li><a href="Notifications.html"> 🔔Notifications</a></li>
+      <li><a href="Reminders.html">📝Reminders</a></li>
+      <li><a href="Transfers.html">📤Transfers</a></li>
+      <li><a href="CreditCards.html">💳Credit Cards</a></li>
+      <li><a href="Loans.html">💰Loans</a></li>
+      <li><a href="Requests.html">📃Requests</a></li>
+      <li><a href="Transactions.html">⌛Transactions</a></li>
+      <li><a href="PayBills.html">💲Pay Bills</a></li>
+      <li><a href="Settings.html">⚙️Settings</a></li>
+      <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+      <li>
+        <img onclick="toggleDropdown()" class="myDropdown" src="Account.png" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+        <div id="myDropdown" class="dropdown-content">
 
-    <h1>Set New Reminder</h1>
-    <div id="reminder" class="container">
-      <div class="form-container sign-in-container"></div>
-        <div class="overlay-panel overlay-right"></div>
-          <table>
-            <tr>
-              <th>Title</th>
-              <td><input type="text" placeholder="Title"></td>
-            </tr>
-            <tr>
-              <th>Description</th>
-              <td><input type="text" placeholder="Description"></td>
-            </tr>
-            <tr>
-              <th>Category</th>
-                <td>
-                  <select>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select>
-                 </td>
-             </tr>
-              <tr>
-                <th>Date</th>
-                <td><input type="date" placeholder="date"></td>
-              </tr>
-            </table>
-            
-            <button><a   href="Reminders.html">Set</button>
+          <a href="Requests.html">Open a new Account</a>
+          <a href="AccountInfo.html">Account info</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
         </div>
       </div>
-    </div>
+    </li>
+    </ul>
+  </nav>
+ 
+
+<form id="msform">
+    
+    <h1>Set New Reminder</h1>
+
+    <fieldset>
+      <h2 class="fs-title">Account</h2>
+      <input type="text" name="title" placeholder="Reminder Title" />
+      <input type="text" name="description" placeholder="Description" />
+      <input type="date" name="date" placeholder="Date" />
+	  <a href="Reminders.html" class="submit action-button" target="_top">Cancel</a>
+		<!-- <a href="Requests.html" class="submit action-button" target="_top">Submit</a> -->
+    <button onclick="showAlert()" type="submit" class="submit action-button">Submit</button>
+    </fieldset>
+  </form>
+
+  
+
 </body>
-
-
 </html>

@@ -1,81 +1,156 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
 
- ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #afa0cb;
-  }
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 200px;
+  width: 100%;
+  /*background-color: linear-gradient(#51087c, #51087c 60%, #51087c);*/
+  /* background-color: #580348;*/
+  background-color: #51087c;
+}
 
-  ul.navbar li {
-    float: left;
-    display: inline-block;
-  }
 
-  ul.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  ul.navbar li a:hover {
-    background-color: #87a5ff;
-  }
- 
-  
-  img.logo {
-    vertical-align: right; /* Align the image vertically in the navigation bar */
-    height: 30px; /* Adjust the height of the image as needed */
-    margin-right: 20px; /* Add margin to separate the image from the navigation links */
-  }
-  .client-info {
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    text-align: left;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #a4c2fd;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 600px;
-    background-color: #67a381;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    display: none;
-    z-index: 1;
-  }
-  
-  .dropdown a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+ul.navbar2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #51087c;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
   
   
- 
+ /* width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;*/
+}
+
+p {
+  color:#fdf3ff; 
+  font-size: 18px; 
+}
+
+/*
+
+body {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}*/
+
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+/*--------------------------------------*/
+
+ul.navbar2 li {
+  float: left;
+}
+ul.navbar2 p {
+  float: left;
+    color:#fdf3ff; 
+  font-size: 18px; 
+}
+
+ul.navbar2 li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar2 li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
+
+.client-info {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  text-align: left;
+}
+
+p {
+  color:#fdf3ff; 
+  font-size: 18px; 
+}
+a{
+color:#5b3dce; 
+}
+
+.home-icon{
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  height: 25px; 
+
+}
+h1 {
+  color: #5b3dce; 
+  font-size: 25px; 
+  margin-left: 65px;
+  margin-top: 120px;
+}
+
+/* body {
+  font-family: "lato", sans-serif;
+} */
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+img:hover {
+  background-color: #fff;
+  }
+  
+/* ///////////////////////////NAVBAR///////////////////////////////////// */
 
   p {
     color: rgb(6, 6, 113); 
@@ -83,7 +158,7 @@
   }
 *{
   box-sizing:border-box;
-  font-family: 'Space Mono', monospace;
+  /* font-family: 'Space Mono', monospace; */
 }
 
 
@@ -119,7 +194,7 @@ body{
 
   justify-content: center;   */
 
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 
   background-color: #f1f1f1; 
 
@@ -141,8 +216,9 @@ height: 190px;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective:600px;
-  margin-left: 450px;
-  margin-top: 100px;
+   margin-left: 450px;
+  /* margin-top: 100px;  */
+  position: relative;
 }
 
 .card__part{
@@ -471,3 +547,4 @@ button {
 .btn-pill:hover + .dropdown {
   display: block;
 }
+/* NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW */

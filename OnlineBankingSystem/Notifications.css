@@ -349,3 +349,7 @@ input::placeholder {
   padding: 5em 5em 1em 1em;
   color: #48001e;
 }
+
+img:hover {
+  background-color: #fff;
+  }
