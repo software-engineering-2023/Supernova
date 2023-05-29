@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< Updated upstream
   <style>
     /* Optional CSS styles for styling the navigation bar */
     ul.navbar {
@@ -44,10 +45,16 @@
     }
    
   </style>
+=======
+  <title>Settings</title>
+  <script src="suicideguy.js"></script>
+  <link rel="stylesheet" href="Settings.css">
+>>>>>>> Stashed changes
 </head>
 <body>
   <nav>
     <ul class="navbar">
+<<<<<<< Updated upstream
       <li><a href="Home.html">Home</a></li>
       <li><a href="Notifications.html">Notifications</a></li>
       <li><a href="Reminders.html">Reminders</a></li>
@@ -68,5 +75,105 @@
     <p>Client ID: 123456</p>
     <p>Last Login: (date and time)</p>
   </div>
+=======
+     <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+      <li><a href="Home.html">🏠Home</a></li>
+      <li><a href="Notifications.html"> 🔔Notifications</a></li>
+      <li><a href="Reminders.html">📝Reminders</a></li>
+      <li><a href="Transfers.html">📤Transfers</a></li>
+      <li><a href="CreditCards.html">💳Credit Cards</a></li>
+      <li><a href="Loans.html">💰Loans</a></li>
+      <li><a href="Requests.html">📃Requests</a></li>
+      <li><a href="History.html">⌛History</a></li>
+      <li><a href="PayBills.html">💲Pay Bills</a></li>
+      <li><a href="Settings.html">⚙️Settings</a></li>
+      <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+      <li>
+        <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="OpenAccount.html">Open a new accountr</a>
+          <a href="AccountInfo.html">Account info</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
+        </div>
+      </div>
+    </li>
+    </ul>
+  </nav>
+ 
+  <div class="table">
+    <h2>Change Password</h2>
+    <table>
+      <tr>
+        <th>Current Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>New Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>Confirm Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+      <td>  <button> Apply Password </button></td>
+      </tr>
+      
+    </table>
+
+    <h2>Biometric authentication login registered devices</h2>
+    <table id="BetweenMyAccounts" class="input-table">
+      <tr>
+        <th>Android Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" >
+          </td>
+      </tr>
+      <tr>
+        <th>IOS Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" checked >
+          </td>
+      </tr>
+      <tr>
+        <th class="header"></th>
+      </tr>
+    </table>
+    <p class="note">  Note: Deactivate Registration will disable Biometric Authentication Login from all devices    </p>
+    <h2>Push Notifications</h2>
+    <table>
+      <tr>
+        <th>Android Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" >
+        </td>
+      </tr>
+      <tr>
+        <th>IOS Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" checked>
+        </td>
+      <tr>
+        <th>Web Browser</th>
+        <td>
+          <input type="checkbox" class="toggle">
+        </td>      
+      </tr>
+    </table>
+    <p class="note">  Note: Disabling the service will unregister the device from receiving alerts via push notifications.</p>
+    <table>
+        <tr>
+          <th>Feedback Preferences</th>
+          <td>
+            <input type="checkbox" class="toggle" checked>
+          </td>
+        </tr>
+    </table>
+    <p class="note">  Note: Disabling this will disable the feedback window after every transaction.</p>
+    <button> Apply Changes </button>
+  </div>
+
+>>>>>>> Stashed changes
 </body>
 </html>
