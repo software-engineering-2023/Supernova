@@ -74,7 +74,7 @@ ul.navbar {
   
   .container {
     display:none;
-    background-color: gray;  
+    background-color:#e0aad6;  
     float: right;
     width: calc(100% - 240px); /* Adjust the width as needed */
     margin-top: 20px;
@@ -86,6 +86,7 @@ ul.navbar {
 .container p{
   padding:0px;
   margin:0px;
+  color:white
  
 }
 
@@ -97,6 +98,13 @@ h1{
   font-weight: 300;
   text-align: center;
   margin-bottom: 15px;
+}
+h3{
+  color:#5b3dce ;
+}
+label{
+  color:#5b3dce ;
+ font-weight: bold;
 }
 table{
   width:100%;

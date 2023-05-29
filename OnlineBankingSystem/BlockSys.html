@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<style>
+      .btn {
+        margin-left: 550px;
+        margin-top: 250px;
+        width: 400px;
+        height: 120px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        perspective: 1000px;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px) translateZ(20px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+</style>
+
+<html>
+<head>
+    <link rel="stylesheet" href ="Admin.css"/>
+    <style>
+        body {
+           background-color: #fdf3ff;
+        }
+        .bankerpic{
+margin-top: 100px;
+margin-left: 285px;
+
+
+}
+.logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px; 
+    }
+
+     </style>
+
+
+
+
+</head>
+<body>
+   <img class="logo" src="Supernove.png" alt="Logo">
+
+
+<nav>
+   <a href="HomeAdmin.html">Home</a>
+	<a href="ReportsAdmin.html">Reports</a>
+   <a href="BlockSys.html">System</a>
+   <a href="SettingsAdmin.html">Settings</a>
+   <a href="Login.html">Log Out</a>
+
+	<div class="animation start-System"></div>
+
+</nav>
+
+<button onclick="showAlert()" type="submit" class="btn">Block System Temporarly </button>
+
+</body>
+</html>
+<script>
+    function showAlert() {
+      alert(" ✅ System Blocked and Users got Notified");}
+</script>
