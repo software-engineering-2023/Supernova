@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="CreditCards.CSS">
+<script>
+    function showAlert() {
+      alert(" ✅  Your pin has been changed successfully");
+    }
+  </script>
 <style>
     title{
         color: lightsalmon;
@@ -116,7 +121,7 @@
         <label for="confirm-pin">Confirm New PIN</label>
         <input type="password" id="confirm-pin" name="confirm-pin" required>
       </div>
-      <button type="submit" class="btn">Reset PIN</button>
+      <button onclick="showAlert()" type="submit" class="btn">Reset PIN</button>
     </form>
   </div>
 </body>

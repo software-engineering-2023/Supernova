@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1d178c;
+    background-color: #afa0cb;
   }
 
   ul.navbar li {
@@ -94,9 +94,10 @@
   width: 100%;
 }*/
 body{
-  background-image: url("background2.png");
+  /* background-image: url("background2.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #81d1c0;
   /* display: flex; */
   /* justify-content: center;
   align-items: center; */
@@ -306,6 +307,8 @@ button {
   align-items: center;
   position: relative;
   margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 5px 12px;
   height: 100px;
   width: 200px;
@@ -316,10 +319,10 @@ button {
   align-items: center;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: orange;
+  background-color:lightsalmon;
   border: 1px solid rgba(22, 75, 167, 0.427);
   border-radius: 10px;
-  color: orange;
+  color: lightsalmon;
   font-weight: 400;
   font-size: 20px;
   font-family: inherit;
