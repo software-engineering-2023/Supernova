@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="CreditCards.CSS">
+<script>
+    function showAlert() {
+      alert(" ✅  Your pin has been changed successfully");
+    }
+  </script>
+<style>
+    title{
+        color: lightsalmon;
+    }
+    
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      margin-top: 50px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: lightsalmon;
+      color: #fff;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+</style>
+
+<html>
+<head>
+  <script src="CreditCards.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+
+      crossorigin="anonymous">
+
+        <title>Reset PIN</title>
+
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+     <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+      <li><a href="Home.html">🏠Home</a></li>
+      <li><a href="Notifications.html"> 🔔Notifications</a></li>
+      <li><a href="Reminders.html">📝Reminders</a></li>
+      <li><a href="Transfers.html">📤Transfers</a></li>
+      <li><a href="CreditCards.html">💳Credit Cards</a></li>
+      <li><a href="Loans.html">💰Loans</a></li>
+      <li><a href="Requests.html">📃Requests</a></li>
+      <li><a href="Transactions.html">⌛Transactions</a></li>
+      <li><a href="PayBills.html">💲Pay Bills</a></li>
+      <li><a href="Settings.html">⚙️Settings</a></li>
+      <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+      <li>
+        <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+        <div id="myDropdown" class="dropdown-content">
+
+          <a href="OpenNewAccount.html">Open a new Account</a>
+          <a href="AccountInfo.html">Account info</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
+        </div>
+      </div>
+    </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2>Reset PIN</h2>
+    <form>
+      <div class="form-group">
+        <label for="current-pin">Current PIN</label>
+        <input type="password" id="current-pin" name="current-pin" required>
+      </div>
+      <div class="form-group">
+        <label for="new-pin">New PIN</label>
+        <input type="password" id="new-pin" name="new-pin" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-pin">Confirm New PIN</label>
+        <input type="password" id="confirm-pin" name="confirm-pin" required>
+      </div>
+      <button onclick="showAlert()" type="submit" class="btn">Reset PIN</button>
+    </form>
+  </div>
+</body>
+</html>
+

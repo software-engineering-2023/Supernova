@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+
+
+  <title>Settings</title>
+  <script src="suicideguy.js"></script>
+  <link rel="stylesheet" href="Settings.css">
+<style>
+  ul.navbar2 li {
+  float: left;
+}
+ul.navbar2 p {
+  float: left;
+    color:#fdf3ff; 
+  font-size: 18px; 
+}
+
+ul.navbar2 li a {
+  display: block;
+  color: #fdf3ff;
+  margin-top:160px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar2 li a:hover {
+  background-color: #fdf3ff;
+  color: #51087c;
+}
+
+
+img.logo {
+  vertical-align: left; /* Align the image vertically in the navigation bar */
+  height: 10px; /* Adjust the height of the image as needed */
+  margin-right: 20px; /* Add margin to separate the image from the navigation links */
+}
+
+.icon-image {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  height: 130px; /* Adjust the height of the image as needed */
+  width: 130px;
+}
+img:hover {
+background-color: #fff;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+     <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+      <li><a href="Home.html">🏠Home</a></li>
+      <li><a href="Notifications.html"> 🔔Notifications</a></li>
+      <li><a href="Reminders.html">📝Reminders</a></li>
+      <li><a href="Transfers.html">📤Transfers</a></li>
+      <li><a href="CreditCards.html">💳Credit Cards</a></li>
+      <li><a href="Loans.html">💰Loans</a></li>
+      <li><a href="Requests.html">📃Requests</a></li>
+      <li><a href="Transactions.html">⌛Transactions</a></li>
+      <li><a href="PayBills.html">💲Pay Bills</a></li>
+      <li><a href="Settings.html">⚙Settings</a></li>
+      <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+      <li>
+        <img onclick="toggleDropdown()" class="myDropdown" src="Account.png" alt="Dropdown Icon" style="height:50px; width:50px; top: 150px; position: relative;">
+        <div id="myDropdown" class="dropdown-content">
+
+          <a href="Requests.html">Open a new Account</a>
+          <a href="AccountInfo.html">Account info</a>
+          <a href="Settings.html">Settings</a>
+          <a href="Login.html">Sign Out</a>
+        </div>
+      </div>
+    </li>
+    </ul>
+  </nav>
+ 
+  <div class="table">
+    <h2>Change Password</h2>
+    <table>
+      <tr>
+        <th>Current Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>New Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>Confirm Password</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+      <td>  <button> Apply Password </button></td>
+      </tr>
+      
+    </table>
+
+    <h2>Biometric authentication login registered devices</h2>
+    <table id="BetweenMyAccounts" class="input-table">
+      <tr>
+        <th>Android Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" >
+          </td>
+      </tr>
+      <tr>
+        <th>IOS Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" checked >
+          </td>
+      </tr>
+      <tr>
+        <th class="header"></th>
+      </tr>
+    </table>
+    <p class="note">  Note: Deactivate Registration will disable Biometric Authentication Login from all devices    </p>
+    <h2>Push Notifications</h2>
+    <table>
+      <tr>
+        <th>Android Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" >
+        </td>
+      </tr>
+      <tr>
+        <th>IOS Devices</th>
+        <td>
+          <input type="checkbox" class="toggle" checked>
+        </td>
+      <tr>
+        <th>Web Browser</th>
+        <td>
+          <input type="checkbox" class="toggle">
+        </td>      
+      </tr>
+    </table>
+    <p class="note">  Note: Disabling the service will unregister the device from receiving alerts via push notifications.</p>
+    <table>
+        <tr>
+          <th>Feedback Preferences</th>
+          <td>
+            <input type="checkbox" class="toggle" checked>
+          </td>
+        </tr>
+    </table>
+    <p class="note">  Note: Disabling this will disable the feedback window after every transaction.</p>
+    <button> Apply Changes </button>
+  </div>
+
+</body>
+</html>

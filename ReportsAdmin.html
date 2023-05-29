@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href ="ReportsAdmin.css"/>
+    <style>
+        body {
+           background-color: #fdf3ff;
+        }
+
+        .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px;}
+        
+      .btn {
+         position: relative;
+        margin-left: 800px;
+        margin-top: 100px;
+        width: 200px;
+        height: 120px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        perspective: 1000px;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px) translateZ(20px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .bankerpic{
+margin-top: 100px;
+margin-left: 285px;
+
+
+}
+.logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px; 
+    }
+
+     </style>
+ 
+
+
+
+</head>
+<body>
+
+   <img class="logo" src="Supernove.png" alt="Logo">
+
+
+<nav>
+   <a href="HomeAdmin.html">Home</a>
+	<a href="ReportsAdmin.html">Reports</a>
+   <a href="BlockSys.html">System</a>
+   <a href="SettingsAdmin.html">Settings</a>
+   <a href="Login.html">Log Out</a>
+
+	<div class="animation start-Reports"></div>
+</nav>
+
+
+<h1>Reports</h1>
+
+  <div class="container">
+
+    <div class="box">
+      <div class="container-3">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Search..." />
+      </div>
+    </div>
+  
+   
+    <div class="rightbox">
+      <div class="rb-container">
+        <ul class="rb">
+
+
+          <li class="rb-item" ng-repeat="itembx">
+            <div class="timestamp">
+              1st June 2019<br> 9:00 AM
+            </div>
+            <div class="item-title">System Bug Report </div>
+            <div class="item-title">Report ID: 123456</div>
+            <div class="item-title">Report Status: Pending</div>
+          </li>
+
+
+          <li class="rb-item" ng-repeat="itembx">
+            <div class="timestamp">
+              19th July 2022<br> 1:00 PM
+            </div>
+            <div class="item-title">Slow Response Time Report </div>
+            <div class="item-title">Request ID: 234567</div>
+            <div class="item-title">Request Status: Pending</div>
+          </li>
+
+
+          <li class="rb-item" ng-repeat="itembx">
+            <div class="timestamp">
+              3rd May 2023<br> 7:00 PM
+            </div>
+            <div class="item-title">System Crash Report </div>
+            <div class="item-title">Request ID: 124567</div>
+            <div class="item-title">Request Status: Pending</div>
+          </li>
+         
+  
+        </ul>
+        <button onclick="showAlert()" type="submit" class="btn">Solve Report </button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+<script>
+   function showAlert() {
+     alert(" ✅ Report Solved Successfully");}
+</script>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="CreditCards.CSS">
+<script>
+    function showAlert() {
+      alert(" Card has been blocked ✅ ");
+    }
+  </script>
+<style>
+     .container {
+      margin-top: 50px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .item button {
+	width: 100%;
+	color: lightsalmon;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-shadow: 0 -1px #ffffff;
+	background-image: linear-gradient(#ffe46e 0%, #ffd936 30% 80%, #ffcd19 100%);
+	padding: 1.4rem;
+	border: solid 1px #c98d00;
+	outline: none;
+	border-radius: 2.5rem / 50%;
+	transition: filter 500ms ease-out;
+}
+
+.btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: lightsalmon;
+      color: #fff;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+    h2{
+        color: lightsalmon;
+    }
+
+</style>
+<html>
+<head>
+  <script src="CreditCards.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Block & Replacment</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+
+      crossorigin="anonymous">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Notifications.html">Notifications</a></li>
+      <li><a href="Reminders.html">Reminders</a></li>
+      <li><a href="Transfers.html">Transfers</a></li>
+      <li><a href="CreditCards.html">Credit Cards</a></li>
+      <li><a href="Loans.html">Loans</a></li>
+      <li><a href="Requests.html">Requests</a></li>
+      <li><a href="History.html">History</a></li>
+      <li><a href="PayBills.html">Pay Bills</a></li>
+      <li><a href="ReportIssue.html">Report Issue</a></li>
+      <li>
+          <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon">
+          <div id="myDropdown" class="dropdown-content">
+            <a href="AccountInfo.html">Account info</a>
+            <a href="Settings.html">Settings</a>
+            <a href="Login.html">Sign Out</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <h2>Block & Replacment</h2>
+    <form>
+  <label for="size-select">Select Card</label>
+  <br>
+  <select name="size" id="size-select" required>
+      <option value="C1">123456789</option>
+      <option value="C2">135792468</option>
+  </select>
+  <br>
+  <div>
+  <label for="color-select">Specify Reason</label>
+  <br>
+  <select name="color" id="color-select" required>
+      <option value="R1">Damaged</option>
+      <option value="R2">Lost</option>
+      <option value="R3">Stolen</option>
+  </select>
+</div>
+  <br>
+<div>
+  <label for="quantity-select">Do you want a Replacment?</label>
+  <br>
+  <select name="quantity" id="quantity-select" required>
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+  </select>
+</div>
+  <br>
+<div>
+  <button onclick="showAlert()" type="submit" class="btn">Block Card</button>
+</div>
+</form>
+</div>
+</body>
+</html>
