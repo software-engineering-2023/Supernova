@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href ="Paybills.css"/>
+</head>
+<body>
+  <body>
+    <nav>
+      <ul class="navbar">
+       <li> <img src="Supernova.png" alt="icon-image" class="icon-image"></li>
+        <li><a href="Home.html">🏠Home</a></li>
+        <li><a href="Notifications.html"> 🔔Notifications</a></li>
+        <li><a href="Reminders.html">📝Reminders</a></li>
+        <li><a href="Transfers.html">📤Transfers</a></li>
+        <li><a href="CreditCards.html">💳Credit Cards</a></li>
+        <li><a href="Loans.html">💰Loans</a></li>
+        <li><a href="Requests.html">📃Requests</a></li>
+        <li><a href="History.html">⌛History</a></li>
+        <li><a href="PayBills.html">💲Pay Bills</a></li>
+        <li><a href="Settings.html">⚙Settings</a></li>
+        <li><a href="ReportIssue.html">ℹ Report Issue</a></li>
+        <li><a href="Login.html">Log out</a></li>
+        <li>
+          <img onclick="toggleDropdown()" class="myDropdown" src="Suicide.png" alt="Dropdown Icon">
+          <div id="myDropdown" class="dropdown-content">
+            <a href="AccountInfo.html">Account info</a>
+            <a href="ReportIssue.html">Report Issue</a>
+            <a href="Settings.html">Settings</a>
+            <a href="Login.html">Sign Out</a>
+          </div>
+        </div>
+      </li>
+      </ul>
+    </nav>
+    <div class="sidebar">
+      <ul class="menu">
+        <li><a href="#" onclick="openContainer('container1')">View Bills</a></li>
+        <li><a href="#" onclick="openContainer('container2')">Add Bill</a></li>
+        <li><a href="#" onclick="openContainer('container3')">Manage Bills</a></li>
+        <li><a href="#" onclick="openContainer('container4')">Quick Bill Pay</a></li>
+        <li><a href="#" onclick="openContainer('container5')">Payment History</a></li>
+
+      </ul>
+    </div>
+    
+    <div class="container" id="container1">
+     <h3>Pay bills hassle free </h3> 
+     <p>This service enables you to directly pay for bills, make donations, and recharge the mobile phone, as well as other many payment services.</p>
+     <p>Note that this service enables you to pay for the bills to the service provider that has been previously added.</p>
+    </div>
+    <div class="container" id="container2">
+        <h3>Category</h3>
+        <!-- <label for="category">Choose a Category:</label> -->
+
+        <select id="category">
+          <optgroup label="Telecom & Internet">
+           
+          <option value="1"> ADSL Resellers</option>
+          <option value="2">Syscom          </option>
+          <option value="3">Orange          </option>
+          <option value="4">WE              </option>
+          <option value="5">Vodafone        </option>
+          <option value="6">Etisalat        </option>
+          <option value="7">Noor ADSL       </option>
+          <option value="8">WE Internet     </option>
+          <option value="9">Orange DSL     </option>
+
+          
+          <optgroup label="Utility">
+           
+            <option value="1">North Cairo Electricity
+            </option>
+            <option value="2">Upper Egypt Electricity          </option>
+            <option value="3">NATGAS          </option>
+            <option value="4">Canal Electricity
+            </option>
+            <option value="5">South Cairo Electricity
+            </option>
+            <option value="6">Middle Egypt Electricity
+            </option>
+            <option value="7">North Delta Electricity
+            </option>
+            <option value="8">Alexandria Electricity
+            </option>
+            <option value="9">Cairo Water     </option>
+            <option value="10">Orange DSL     </option>
+            <option value="7">South Delta Electricity
+            </option>
+            <option value="8">Matrouh Water
+            </option>
+        </select>
+        <br><br>
+        <label>Bill Nickname</label>
+        <br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label>Mobile Number</label><br>
+        <input type="text" id="fname" name="fname" required/><br><br>
+        <br>
+        <button type="submit"> Add Bill </button>
+        
+     </div>
+    <div class="container" id="container3">
+     <p style="font-weight: bold; margin: 5px 5px;">Manage Bills</p>
+     <select>
+      <option value="1"> My Monthly Vodafone Recharge</option>
+     </select>
+     <p style="font-weight: bold; margin: 5px 5px;">Category<p>
+     <p>Telecom & Internet</p>
+     <p style="font-weight: bold; margin: 5px 5px;">Bill Name<p>
+     <p>Vodafone</p>
+     <p style="font-weight: bold; margin: 5px 5px;">Bill Nickname (Nickname should be unique)<p>
+     <input type="text" id="fname" value="My Monthly Vodafone Recharge"/>
+     <p style="font-weight: bold; margin: 5px 5px;">Mobile Number</p>
+     <p>01090319724</p>
+     <button> Submit </button>
+
+     <h3></h3>
+    </div>
+    <div class="container" id="container4">
+      <p style="font-weight: bold; margin: 5px 5px;">Manage Bills</p>
+
+      <select id="category">
+        <optgroup label="Telecom & Internet">
+         
+        <option value="1"> ADSL Resellers</option>
+        <option value="2">Syscom          </option>
+        <option value="3">Orange          </option>
+        <option value="4">WE              </option>
+        <option value="5">Vodafone        </option>
+        <option value="6">Etisalat        </option>
+        <option value="7">Noor ADSL       </option>
+        <option value="8">WE Internet     </option>
+        <option value="9">Orange DSL     </option>
+
+        
+        <optgroup label="Utility">
+         
+          <option value="1">North Cairo Electricity
+          </option>
+          <option value="2">Upper Egypt Electricity          </option>
+          <option value="3">NATGAS          </option>
+          <option value="4">Canal Electricity
+          </option>
+          <option value="5">South Cairo Electricity
+          </option>
+          <option value="6">Middle Egypt Electricity
+          </option>
+          <option value="7">North Delta Electricity
+          </option>
+          <option value="8">Alexandria Electricity
+          </option>
+          <option value="9">Cairo Water     </option>
+          <option value="10">Orange DSL     </option>
+          <option value="7">South Delta Electricity
+          </option>
+          <option value="8">Matrouh Water
+          </option>
+      </select>
+
+      <br>
+      <p style="font-weight: bold; margin: 5px 5px;">Mobile Number</p>
+      <input type="text" id="fname" name="fname" required/><br><br>
+      <p style="font-weight: bold; margin: 5px 5px;">Payment Number</p>
+      <input type="text" id="fname" name="fname" required/><br><br>
+      <p style="font-weight: bold; margin: 5px 5px;">Payment Amount</p>
+      <input type="text" id="fname" name="fname" required/><br><br>
+      <button type="submit" onclick="openContainer('paymentform')"> Pay </button>
+
+      
+
+
+    </div>
+    <div class="container" id="paymentform">
+      <p style="font-weight: bold; margin: 5px 5px;">Source Account</p>
+      <select>
+        <option value="1">100023456789</option>
+        <option value="2">100055556789</option>
+        <option value="3">100023456888</option>
+      </select>
+      <p style="font-weight: bold; margin: 5px 5px;">Fees</p>
+      <p>0.00 EGP</p>
+      <p style="font-weight: bold; margin: 5px 5px;">Total</p>
+      <p>100.00 EGP</p>
+      <button onclick="alert('Payment Successful')">Confirm Payment</button>
+
+    </div>
+    <div class="container" id="container5">
+      <section>
+        <!--for demo wrap-->
+        <h1>Transactions</h1>
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr class="table-header">
+                  <th class="col col-1">Date</th>
+                  <th class="col col-2">Biller</th>
+                  <th class="col col-3">Category</th>
+                  <th class="col col-4">Bill Amount</th>
+                  <th class="col col-5">Debit Account</th>
+                  <th class="col col-6">Reference No</th>
+                  <th class="col col-7">Status</th>
+                </tr>
+              </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <tr class="table-row">
+                    <td class="col col-1" data-label="Transaction Date">22 Apr 2022</td>
+                    <td class="col col-2" data-label="Value Date">Vodafone Topup</td>
+                    <td class="col col-3" data-label="Reference Number">Telecom & Internet</td>
+                    <td class="col col-4" data-label="Description">EGP30.00</td>
+                    <td class="col col-5" data-label="Transaction Type">100023456789</td>
+                    <td class="col col-6" data-label="Amount">PC6863482987358</td>
+                    <td class="col col-7" data-label="Balance">Completed</td>
+                  </tr>
+                  
+                    <tr class="table-row">
+                      <td class="col col-1" data-label="Transaction Date">04 Apr 2022</td>
+                      <td class="col col-2" data-label="Value Date">We Bill Payment</td>
+                      <td class="col col-3" data-label="Reference Number">Telecom & Internet</td>
+                      <td class="col col-4" data-label="Description">EGP353.00</td>
+                      <td class="col col-5" data-label="Transaction Type">100023456789</td>
+                      <td class="col col-6" data-label="Amount">PC63570263127497</td>
+                      <td class="col col-7" data-label="Balance">Completed</td>
+               
+        
+
+          
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    
+    </body>
+  </html>
+  <script src="script.js"></script>
+</body>
+</html>
