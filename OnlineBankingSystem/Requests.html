@@ -8,7 +8,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #51087c;
+      background-color: #027B7B;
     }
 
     ul.navbar li {
@@ -28,27 +28,14 @@
     }
   
     body {
-      background-color: #fbf2fa;
+      background-color: #fbf9f2;
     }
-    nav {
-  margin: 2.6em auto;
-}
-
-nav a {
-  list-style: none;
-  padding: 35px;
-  color: #232931;
-  font-size: 1.1em;
-  display: block;
-  transition: all 0.5s ease-in-out;
-}
-
 
     @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
 
 .container {
-  background: #51087c;
+  background: #ffb517;
   width: 540px;
   height: 500px;
   position: relative;
@@ -63,10 +50,22 @@ nav a {
   position: absolute;
   width: 15%;
   height: 110%;
-  background-color: #f7c6f9;
+  background-color: #027B7B;
   box-shadow: 3px 3px 15px rgba(119, 119, 119, 0.5);
 }
 
+nav {
+  margin: 2.6em auto;
+}
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: #232931;
+  font-size: 1.1em;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
 
 .rightbox {
   padding: 0em 34rem 0em 0em;
@@ -171,7 +170,7 @@ input::placeholder {
 
    
  h1 {
-      color: #51087c;
+      color: #ab7016;
       font-size: 40px;
       margin-left: 375px;
       margin-top: 20px;
@@ -285,17 +284,26 @@ input::placeholder {
       100% {
         box-shadow: #27272c;
       }
+
     }
 
+    /* .logo{
+      height: 150px;
+      width: 150px;
+    } */
 
 
 
 
   </style>
+  
+
 </head>
 <body>
   <nav>
     <ul class="navbar">
+
+      <!-- <li><img src="Supernova.png" class="logo"></li> -->
       <li><a href="Home.html">Home</a></li>
       <li><a href="Notifications.html">Notifications</a></li>
       <li><a href="Reminders.html">Reminders</a></li>
@@ -311,9 +319,9 @@ input::placeholder {
     </ul>
   </nav>
   
-  <h1>Transfers</h1>
+  <h1>Requests</h1>
 
-  <div class="container">    
+  <div class="container">
 
     <div class="box">
       <div class="container-3">
@@ -340,9 +348,9 @@ input::placeholder {
             <div class="timestamp">
               1st June 2019<br> 9:00 AM
             </div>
-            <div class="item-title">Between My Account </div>
-            <div class="item-title">Transfer ID: 123456</div>
-            <div class="item-title">Transfer Status: Successful</div>
+            <div class="item-title">Open Account Request </div>
+            <div class="item-title">Request ID: 123456</div>
+            <div class="item-title">Request Status: Approved</div>
           </li>
 
 
@@ -350,8 +358,8 @@ input::placeholder {
             <div class="timestamp">
               19th July 2022<br> 1:00 PM
             </div>
-            <div class="item-title">External </div>
-            <div class="item-title">Transfer ID: 234567</div>
+            <div class="item-title">Loan Request </div>
+            <div class="item-title">Request ID: 234567</div>
             <div class="item-title">Request Status: Declined</div>
           </li>
 
@@ -360,8 +368,8 @@ input::placeholder {
             <div class="timestamp">
               3rd May 2023<br> 7:00 PM
             </div>
-            <div class="item-title">International</div>
-            <div class="item-title">Transfer ID: 124567</div>
+            <div class="item-title">Credit Card Request </div>
+            <div class="item-title">Request ID: 124567</div>
             <div class="item-title">Request Status: Pending</div>
           </li>
          
@@ -373,27 +381,27 @@ input::placeholder {
   </div>
   
   <div class="button-container">
-    <a href="BetweenMyAcc.html">
-      <button style="--clr:#39FF14"><span>Between my accounts</span><i></i></button>
+    <a href="OpenAcc.html">
+      <button style="--clr:#39FF14"><span>Open Account</span><i></i></button>
     </a>
 
-    <a href="Internal.html">
-      <button style="--clr:#FF44CC"><span>Internal</span><i></i></button>
+    <a href="CloseAcc.html">
+      <button style="--clr:#FF44CC"><span>Close Account</span><i></i></button>
     </a>
 
-    <a href="External.html">
-      <button style="--clr:#0FF0FC"><span>External</span><i></i></button>
+    <a href="CCreq.html">
+      <button style="--clr:#0FF0FC"><span>Credit Card</span><i></i></button>
     </a>
 
-    <a href="International.html">
-      <button style="--clr:#8A2BE2"><span>International</span><i></i></button>
+    <a href="LoansReq.html">
+      <button style="--clr:#8A2BE2"><span>Loan</span><i></i></button>
     </a>
 
+    <a href="DepChequesReq.html">
+      <button style="--clr:#E7EE4F"><span>Deposit Cheque</span><i></i></button>
+    </a>
   </div>
-
-
   
-  
-
+ 
 </body>
 </html>
